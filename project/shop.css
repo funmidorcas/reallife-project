@@ -64,6 +64,7 @@ section{
   font-size: 24px;
   cursor: pointer;
   display: none;
+  visibility: hidden;
 
 
 }
@@ -73,31 +74,11 @@ section{
   font-size: 24px;
   display: none;
   cursor: pointer;
+  visibility: hidden;
 
 }
 
-/* Show menu on large screens */
-/* @media (min-width: 640px) {
-  .menu-icon {
-    display: none;
-  }
 
-  .nav {
-    display: flex;
-  }
-
-  .close-icon {
-    display: none;
-  }
-
-  .menu-list {
-    display: flex;
-    gap: 20px;
-  }
-} */
-
-/* Show menu on screens up to 375px */
-/* @media (max-width: 375px) { */
 @media only screen and (max-width: 480px){
   
 .nav {
@@ -109,16 +90,16 @@ section{
   flex-direction: column;
 
   }
-  /* .close-icon{
+  .close-icon{
     display: hidden;
-  }   */
+    visibility: visible;
+
+  }  
+  .menu-icon {
+    visibility: visible;
+
+  }
 }
-
-
-
-
-
-
 
 
 .background-img{

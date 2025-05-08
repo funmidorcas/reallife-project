@@ -1,0 +1,45 @@
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+section{
+    width: 80%;
+    margin-inline: auto;
+}
+.nav{
+    text-decoration: none;
+}
+.background-img{
+    background-image: url(asset/bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+.bg-note{
+    padding-top: 150px;
+color: aliceblue;
+}
+.bg-ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+   bottom: 10px;
+}
+
+
+.product{
+    margin-top: 20px;
+}
+.product img{
+    width: 200px;
+
+}

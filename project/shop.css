@@ -97,8 +97,10 @@ section{
 } */
 
 /* Show menu on screens up to 375px */
-@media (max-width: 375px) {
-  .nav {
+/* @media (max-width: 375px) { */
+@media only screen and (max-width: 480px){
+  
+.nav {
     display: none;
 
   }
@@ -170,7 +172,7 @@ color: aliceblue;
     grid-template-columns: repeat(4, 1fr);
       
   }
-  @media only screen and (max-width: 375px){
+  @media only screen and (max-width: 380px){
     .product-list{
         display: grid;
         grid-template-columns: repeat(2,1fr);

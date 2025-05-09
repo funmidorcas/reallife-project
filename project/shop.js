@@ -19,8 +19,11 @@ function applyCategory(category) {
   
   function openProductPage(element) {
     const productId = element.getAttribute('data-product-id');
-    if (productId) {
-      window.location.href = `${productId}.html`;
+    const category = element.getAttribute('data-category');
+  
+    if (productId && category) {
+      window.location.href = `${productId}.html?category=${category}`;
     }
   }
-  
+    
+

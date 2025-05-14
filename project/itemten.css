@@ -243,13 +243,14 @@ margin-left: 7px;
 
 .view-cart-container{
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .back, .cartt{
    background: #383838;
 border: none;
 padding: 5px;
 border-radius: 5px;
+color: #fff;
 }

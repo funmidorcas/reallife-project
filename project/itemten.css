@@ -106,7 +106,7 @@
 
 .first{
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
 }
 .currency{
     width: 100px;
@@ -127,7 +127,10 @@
 
       
      }
-
+         .house{
+          width: 100%;
+          margin-inline: 10px;
+         }
      .horizontal-scroll {
         display: flex;
         overflow-x: auto;
@@ -169,6 +172,7 @@ color: aliceblue;
 
 .product{
     margin-top: 20px;
+    text-align: start;
 }
 .product img{
     width: 200px;
@@ -181,7 +185,7 @@ color: aliceblue;
 
 .similar{
     margin-left: 10%;
-    padding: 30px;
+    padding-block: 30px;
     font-size: larger;
     font-weight: 900;
 }
@@ -235,4 +239,17 @@ margin-left: 7px;
     padding: 5px;
     border: none;
     border-radius: 10px;
+}
+
+.view-cart-container{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.back, .cartt{
+   background: #383838;
+border: none;
+padding: 5px;
+border-radius: 5px;
 }

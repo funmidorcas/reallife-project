@@ -112,7 +112,7 @@ visibility: hidden;
 }
 .menu-bar{
     position: relative;
-    right: 155px;
+    right: 150px;
     bottom: 10px;
 }
 .img-nav{
@@ -121,6 +121,12 @@ visibility: hidden;
 .head-nav{
     padding-inline: 5px;
 padding-block: 0;
+width: 80%;
+margin-inline: auto;
+padding-top: 10px;
+}
+.icon-nav{
+    margin-top: 10px;
 }
     }
 
@@ -304,4 +310,8 @@ line-height: 40px;
   color: white;
   font-size: 15px;
   border-radius: 6px;
+}
+
+.img-name.selected {
+    border: 2px solid black; /* Adds a blue border to the selected item */
 }

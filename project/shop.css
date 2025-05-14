@@ -16,19 +16,6 @@ section{
     width: 80%;
     margin-inline: auto;
 }
-/* .nav{
-    text-decoration: none;
-}
-.menu{
-  display: none;
-}
-.close{
-  display: none;
-} */
-
-
-
-
 
 .menu-container {
   display: flex;
@@ -59,7 +46,6 @@ section{
   display: flex;
 }
 
-/* Hamburger menu icon */
 .menu-icon {
   font-size: 24px;
   cursor: pointer;
@@ -69,7 +55,6 @@ section{
 
 }
 
-/* Close icon (hidden initially) */
 .close-icon {
   font-size: 24px;
   display: none;
@@ -137,7 +122,10 @@ color: aliceblue;
   .product p {
     margin: 0;
   }
-
+#my-image{
+  height: 200px;
+  margin-bottom: 5px;
+}
 
   .filter{
     display: flex;

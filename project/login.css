@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* html{
+    font-size: 62.5%;
+}
+ */
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/965/779/small/empty-top-wooden-table-and-sakura-flower-with-fog-and-morning-light-background-photo.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(100%) */
+
+}
+/* body:hover{
+  filter: grayscale(0)
+
+} */
+
+.whole{
+    align-items: center;
+}
+.back{
+     margin-block: 200px;
+     backdrop-filter: blur(25px);
+padding-block:  10vw;
+width: 30%;
+align-items: center;
+position: absolute;
+justify-content: center;
+margin-inline: 400px;
+        align-items: center;
+ color: blue;
+ padding: 5rem;
+ border-radius: 30px;
+}
+.login{
+    position: relative;
+    bottom: 6.5vw;
+    left: 5vw;
+    width: 40px;
+    padding: 0 50px 50px;
+    /* padding-bottom: 50px; */
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+border-radius: 0 0 10px 10px;
+display: flex;
+justify-content: center;
+}
+.login.h1{
+    font-size: 3rem;
+}
+.detail{
+    
+}

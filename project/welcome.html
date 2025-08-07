@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login Page</title>
+  <link href="../src/output.css" rel="stylesheet">
+<link rel="stylesheet" href="welcome.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> -->
+   <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
+
+<section class="head">
+    <div class="img-div">
+        <img src="/project/asset/me.jpg" alt="">
+    </div>
+<nav>
+<ul class="nav">
+    <li class="ul-sul"><a href="">Home</a>
+</li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Address</a></li>
+    <li><a href="">Comment</a></li>
+</ul>
+</nav>        
+    
+</section>
+
+<div class="first">
+     <h1 class="first-h1">Welcome to my Space</h1>
+
+</div>
+       
+ <div class="loan">
+    <h1 class="second-h1">Loan Application</h1>
+    <div class="input-div">
+    <input type="text" placeholder="Name" id="name" required >
+     <input type="number" placeholder="Amount" id="num" required >
+     <input type="number" placeholder="Account Number" id="acct" required >
+     <input type="text" placeholder="Collateral" id="coll" required >
+     <input type="date" id="date" required >
+</div>
+    <div class="apply-div"><button class="apply">Apply</button></div>
+ </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+      let name = document.querySelector("#name")
+    let amtt = document.querySelector("#num")
+    let acct = document.querySelector("#acct")
+    let coll = document.querySelector("#coll")
+    let date = document.querySelector("#date")
+  let apply = document.querySelector(".apply")
+    let  amt = document.querySelector(".amt")
+  let newColl = document.querySelector(".coll") 
+    let main = document.querySelector(".main")
+
+  apply.addEventListener('click', function() {
+
+    console.log(name.value)
+console.log(amtt.value)
+console.log(acct.value)
+console.log(coll.value)
+console.log(date.value)
+
+
+  // Save values
+  localStorage.setItem("loanAmt", amtt.value);
+  localStorage.setItem("loanColl", coll.value);
+
+  // Redirect
+  window.location.href = "welcome2.html";
+});
+
+
+
+  })
+
+</script>
+    </body> 

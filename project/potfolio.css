@@ -46,7 +46,6 @@ a:hover{
     left: 0;
     z-index: 100;
 }
- 
 
 section{
     width: 80%;
@@ -70,7 +69,7 @@ overflow: hidden; */
         bottom: 30px;
 
     }
- }
+    }
 .home-detail h1{
   font-size: clamp(3.5rem,10vw, 5.5rem);  
 }
@@ -170,7 +169,8 @@ overflow: hidden; */
 }
 @keyframes rotate-border{
     100%{
-transform: rotate(360deg);    }
+transform: rotate(360deg);   
+ }
 }
 .home-img .img-box .img-item{
     position: relative;
@@ -219,7 +219,44 @@ color: chartreuse;
     display: none;
 
 }
+.nav-bar ul li {
+  position: relative;
+}
 
+.new-nav {
+
+    display: none;
+
+ } 
+   .nav-bar ul li:hover .new-nav{
+display: block;
+position: absolute;
+background: black;
+margin-top: 15px;
+margin-left: -15px;
+     }
+   .nav-bar ul li:hover .new-nav ul{
+    display: block;
+    margin: 10px;
+   
+}
+   .nav-bar ul li:hover .new-nav ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+transform: translateY(-30px);
+
+
+   }
+      .nav-bar ul li:hover .new-nav ul li:last-child{
+   border-bottom: none;
+      }
+      .nav-bar ul li:hover .new-nav ul li a:hover{
+  color: aqua;
+      }
 
 @media (max-width: 480px) {
     .links{
@@ -238,6 +275,13 @@ color: chartreuse;
         transition: 0.75s ease-out;
 
     }
+    .new-nav:hover{ 
+        display: block;
+    }
+   .nav-bar ul li:hover .new-nav{
+display: block;
+   }
+
     .nav-ul{
         display: flex;
         flex-direction: column;

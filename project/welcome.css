@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    display: flex;
+     justify-content: space-between;
+      background: skyblue;
+    width: 100%;
+    padding-inline: 30px;
+    padding-block: 10px;
+        position: fixed;
+    z-index: 10;
+    top: 0;
+
+}
+.img-div{
+    width: 50px;
+        aspect-ratio: 1;
+
+}
+.img-div img{
+width: 100%;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: inherit;
+
+}
+.nav{
+    display: flex;
+    gap: 20px;
+    color:chocolate;
+    margin-top: 10px;
+}
+
+
+.first{
+    margin-top: 150px;
+    width: 80%;
+    margin-inline: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    padding: 20px;
+    
+
+}
+.first-h1{
+    color: blue;
+    text-align: center;
+
+}
+
+
+.loan{
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+/* background: #101357; */
+    padding: 20px;
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom:100px;
+    margin-inline: auto;
+    
+}
+.second-h1{
+    text-align: center;
+    text-transform:  uppercase;
+     padding: 5px;
+     margin-bottom: 30px;
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+input{
+    padding: 5px;
+    border-radius: 10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-block: 5px;
+}
+
+.apply-div{
+background: coral;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    margin-block: 20px;
+    width: 50%;
+margin-inline: auto;
+}
+/* .apply{
+
+} */

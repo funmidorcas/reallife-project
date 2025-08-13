@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    background: black;
+    color:rgb(236, 177, 134);
+    justify-self: center;
+    margin-block: 20%;
+
+ }
+ h1{
+    margin-bottom: 30px;
+        padding: 8px;
+
+ }
+ button{
+    background: rgb(236, 177, 134); 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+ }

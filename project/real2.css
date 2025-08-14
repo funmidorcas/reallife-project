@@ -279,6 +279,7 @@ justify-content: space-between;
     padding-inline: 5px;
     padding-block: 20px;
     background: coral;
+    font-size: 20px;
  
 }
  
@@ -424,7 +425,7 @@ aspect-ratio: inherit;
     display: grid;
   width: 80%;
   margin-inline: auto;
-  gap: 20px;
+  gap: 10px;
   padding: 10px;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
 
@@ -446,7 +447,7 @@ margin-top: 30px;
     text-align: center;
 
 display: grid;
-  gap: 20px;
+  gap: 10px;
     padding: 10px;
 grid-template-columns: repeat(2,1fr);
 }
@@ -559,36 +560,92 @@ display: none;
 }
 .skill-container {
   width: 90%;
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #0a0f1a;
 }
 
 .skill {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 0;
+  margin-bottom: 25px;
 }
 
 .skill span {
-  width: 100px;
+margin-bottom: 5px;
 }
 
 .bar {
-  position: relative;
-  flex: 1;
   height: 10px;
-  background: #2c2f35;
-  border-radius: 10px;
-  margin: 0 10px;
-  overflow: hidden;
+  background: #2e2e2e;
+  border-radius: 5px;
+  overflow: hidden;
 }
+
 .progress {
   height: 100%;
-  background: #22c55e;
-  border-radius: 10px;
-  position: relative;
-  transition: width 0.6s ease;
+  background: #00e676;
+  transition: width 0.5s ease-in-out;
+}
+
+.percent {
+  margin-top: 5px;
+  text-align: right;
+  color: #ccc;
+  font-size: 14px;
+}
+/* hr */
+.qul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-block: 30px;
+  font-size: 30px;
+  color: coral;
+}
+.vertical-line {
+  width: 5px;
+  height: auto;
+  background: linear-gradient(to bottom, #f5d394, #f5d394); 
+}
+/* @media (max-width: 480px) {
+  .vertical-line {
+  height: auto;
+  }
+} */
+.sch-house{
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin-inline: 10%;
+  justify-content: center;
+}
+.iandh{
+  display: flex;
+  gap: 10px;
+
+}
+.school{
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.edu-house{
+  text-align: center;
+}
+.fa-circle{
+  margin-top: 5px;
+  color: coral;
+}
+.cert{
+  color: #b97637;
+}
+small{
+  color:aqua;
 }
 
 /* hr */

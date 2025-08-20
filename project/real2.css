@@ -578,6 +578,7 @@ display: none;
   margin-inline: auto;
   row-gap: 20px;
   column-gap: 10px;
+  text-align: center;
 }
 .grill{
   border: 1px solid coral;
@@ -669,9 +670,14 @@ margin-bottom: 5px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
+    transition: all 5s ease-in -2s  ;
+}
+.school:hover{
+  transform: translateX(40px);
 }
 .edu-house{
   text-align: center;
+  
 }
 .fa-circle{
   margin-top: 5px;
@@ -835,7 +841,7 @@ footer{
 .foot-line{
   line-height: 40px;
 }
-.semi-last{
+semi-last{
   display: flex;
   justify-content: space-between;
 }
@@ -843,10 +849,22 @@ footer{
   margin-top: 20px;
 
 }
-.back{
-  text-align: end;
-  color: red;
-  padding-right: 10px;
+.back-to-top {
+  position: fixed;
+  bottom: 40px;     
+  right: 40px;      
+  background-color: #f4c16f; 
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
 }
 
 

@@ -852,7 +852,7 @@ semi-last{
 .back-to-top {
   position: fixed;
   bottom: 40px;     
-  right: 40px;      
+  right: 20px;      
   background-color: #f4c16f; 
   color: black;
   border: none;

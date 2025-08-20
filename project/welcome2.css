@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.success{
+    width: 30%;
+    margin-inline: auto;
+    background: chocolate;
+    text-align: center;
+    margin-top: 15%;
+    padding-block: 30px;
+    border: none;
+    border-radius: 20px;
+    
+
+}
+ h3, i, h1{
+    line-height: 60px;
+ }
+ .icon{
+    font-size: 40px;
+    font-weight: 900;
+    color: brown;
+ }
+

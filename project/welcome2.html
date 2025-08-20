@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login Page</title>
+  <link href="../src/output.css" rel="stylesheet">
+<link rel="stylesheet" href="welcome2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
+
+<div class="success">
+    <h3>Loan Application</h3>
+   <i class="fa-solid fa-circle-check icon"></i>
+  <h1>Application Submitted!</h1>
+  <div class="main">
+   <p>Loan Amount:<span class="amt"></span></p> 
+      <p>Collateral:<span class="coll"></span></p> 
+
+  </div>
+</div>
+  
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  let amt = document.querySelector(".amt");
+  let newColl = document.querySelector(".coll");
+
+  // Get from localStorage
+  const loanAmt = localStorage.getItem("loanAmt");
+  const loanColl = localStorage.getItem("loanColl");
+
+  // Display
+  amt.textContent = "N" + loanAmt;
+  newColl.textContent = loanColl;
+});
+
+
+
+</script>
+</body>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link href="../src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+   </head>
+   <body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
+    <div class="flex flex-col lg:flex-row w-[80%] m-[auto] lg:w-auto ">
+  <div class="flex flex-col h-[300px] lg:h-[500px] lg:w-[50%] w-[300px] bg-cover bg-no-repeat bg-center bg-[url(https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_15/m5p6cu1a/element_282/rwdMode_1/2400x681/about-us_1.webp)]"></div>
+    <div class="bg-white-400 pt-[50px] pl-[50px] w-[300px] flex flex-col lg:w-[50%]">
+  <h2 class="">Sign Up</h2>
+  <p class="mt-[5px] mr-[200px]  text-sm">Already have an account? <a href="signin.html" class="text-green-500" >Sign in</a></p>
+ <form  id="form" class="flex justify-start flex-col mt-[20px] text-left">
+  <label for="name" class="block text-sm font-medium text-gray-700 mt-[10px]">Your Name:</label>
+  <input id="name" type="text" class="border-none rounded-xl bg-cyan-900 text-white p-[3px] pl-[10px] w-[250px]" placeholder="your full name" required>
+  <label for="username" class="block text-sm font-medium text-gray-700 mt-[10px]"> Username:</label>
+  <input id="username" type="text" class="border-none rounded-xl bg-cyan-900 text-white p-[3px] pl-[10px] w-[250px]" placeholder="can contain number and symbol" required>
+  <label for="email" class="block text-sm font-medium text-gray-700 mt-[10px]">Email address</label>
+  <input id="email" type="email" id="email" name="email" class="border-none rounded-xl bg-cyan-900 text-white p-[3px] pl-[10px] w-[250px]"" placeholder="enter your email address" required>
+  <label for="password" class="block text-sm font-medium text-gray-700 mt-[10px]">Password:</label>
+  <input id="password" type="password" class="border-none rounded-xl bg-cyan-900 text-white p-[3px] pl-[10px] w-[250px]"" placeholder="must be 6 digit long" required>
+<div class="flex gap-[10px] mt-[10px]">  <input type="checkbox" required> <label for="checkbox">I agree with <a href="">Privacy Policy</a> and <a href=""> Terms of Use</a></label></div>
+          <div class="mt-[30px] border-none rounded-xl text-center bg-cyan-900 w-[250px] text-green-300 flex justify-start">
+            <button class=" border-none rounded-xl bg-cyan-900  w-[250px]">Sign Up</button></div>
+        </form>  
+      </div>
+
+</div>
+</body>
+<script>
+  document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    const name = document.getElementById("name").value;
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (password.length !== 6) {
+      alert("Password must be exactly 6 characters long.");
+      return; 
+    }
+
+    console.log("Name:", name);
+    console.log("Username:", username);
+    console.log("Email:", email);
+    console.log("Password:", password);
+
+    alert("Form submitted successfully!");
+
+    // You can add a fetch() or send to backend here if needed
+  });
+</script>
+</html>

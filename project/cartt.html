@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart Page</title>
+  <link href="../src/output.css" rel="stylesheet">
+<link rel="stylesheet" href="cart.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
+        <div class="bg-nav">
+   <div class="head-nav flex justify-between">
+    <div class="img-nav w-[50px] h-[50px]">
+        <img  class="logo w-full h-full rounded-full object-cover" src="./asset/Logo.jpg" alt="logo">
+ </div>
+ <div class="menu">
+
+ <nav class="nav-bar set">
+
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open">
+        <i class="fa-solid fa-bars icon menu-bar"><span class=show></span></i>    
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+
+    <div class="links">
+        <label for="sidebar-active" class="close">
+            <i class="fa-solid fa-xmark icon"></i>
+        </label>
+
+
+    <ul class="nav-ul">
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Contact</a></li>
+
+    </ul>
+</nav></div>
+<div class="icon-nav flex gap-[10px] mt-[20px]"> 
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-bag-shopping" ></i>
+    <span id="top">0</span>
+   </div>
+
+ </div>
+
+ </div>
+</div>
+
+<section>
+    <ul class="top-ul">
+        <li><a href="">Home</a></li> >
+        <li><a href="">Shop</a></li> >
+        <li><a href="">Product</a></li> >
+        <li><a href="">Contact</a></li>
+         
+     </ul>
+<div class="house">
+    <div id="background-container" class="background-container">
+        <button id="change-background-left" class="arrow-button">←</button>
+        <button id="change-background-right" class="arrow-button">→</button>
+    </div>
+ 
+    <div class="side-house">
+        <div class="toped"><div id="rating" class="text-sm font-medium" ><i class="fa-solid fa-star text-sm font-medium"></i>
+            <i class="fa-solid fa-star text-sm font-medium"></i>
+            <i class="fa-solid fa-star text-sm font-medium"></i>
+            <i class="fa-solid fa-star text-sm font-medium"></i>
+            <i class="fa-solid fa-star text-sm font-medium"></i></div> <span class="top"> 0 reviews</span></div> 
+             <h1 class="lux">Luxury Slipper</h1>
+      <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, beatae?</p>
+      <div class="price"><span class="no-line">N9,999</span><span class="line">N12,000</span></div>        
+    <hr>
+    <p class="offer">Offer Expires in:</p>
+    <div class="offer-div">
+        <div class="offer-time"><span class="offer-span">02</span><p class="ofer-name">Days</p></div>
+    <div class="offer-time"> <span class="offer-span">12</span><p class="ofer-name">Hours</p></div>
+    <div class="offer-time"><span class="offer-span">45</span><p class="ofer-name">Minutes</p></div>
+    <div class="offer-time"> <span class="offer-span">05</span><p class="ofer-name">Seconds</p></div>
+</div>
+     <hr>
+    <div class="size">
+        <select
+            class="size-select"
+            name="size"
+            id="size-choose" required
+        >
+            <option selected >sizes</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+        </select>
+    </div>
+
+
+
+     <!-- <hr> -->
+<div class="image-list">
+    <div class="img-name">
+        <span class="black">Black</span>
+        <img  src="asset/shoe2.jpg" alt="">
+    </div>
+    <div class="img-name">
+        <span>Black</span>
+        <img  src="asset/shoe4.jpg" alt="">
+    </div>
+    <div class="img-name">
+        <span>Black</span>
+        <img  src="asset/shoe5.jpg" alt="">
+    </div>
+    <div class="img-name">
+        <span>Orange</span>
+        <img  src="asset/shoe7.jpg" alt="">
+    </div>
+</div>
+    <div class="btn-div"> <div class="btn"><button id="minus">-</button>
+    <span id="result">0</span>
+<button id="plus">+</button></div>
+<button class="wish">Wishlist</button></div>
+<button class="cart" id="payment">Make Payment</button>
+</div>
+       
+</div>
+
+<div class="image-flex"><img  src="asset/shoe2.jpg" alt="">
+    <img  src="asset/shoe4.jpg" alt="">
+    <img  src="asset/shoe5.jpg" alt=""></div>
+
+</section>
+
+<script src="cart.js"></script>
+    </body>
+    </html>

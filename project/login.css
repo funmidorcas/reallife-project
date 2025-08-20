@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/965/779/small/empty-top-wooden-table-and-sakura-flower-with-fog-and-morning-light-background-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2)
+
+}
+.login-box{
+    position:relative;
+    width: 450px;
+    backdrop-filter:blur(25px);
+    border: 2px solid #ffff;
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: #fff;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+}
+.login-header{
+        position: absolute;
+        top:0;
+        left: 50%;
+       transform:translateX(-50%);
+display: flex;
+justify-content: center;
+align-items: center;
+  background-color: white;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+
+}
+
+.login-header span{
+    font-size: 30px;
+   color: turquoise;
+}
+
+ .login-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width:30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+            /* box-shadow: 15px 0 0 0 rgba(0, 0, 0, 0.2); */
+            box-shadow: 15px 0 0 0 white;
+ }
+
+ .login-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+            /* box-shadow: -15px 0 0 0 rgba(0, 0, 0, 0.2); */
+            box-shadow: -15px 0 0 0 white;
+
+ }
+ .input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+ }
+ .input-field{
+    width: 100%;
+    height:55px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    padding-inline: 20px 50px;
+    border: 2px solid white;
+    border-radius: 30px;
+    outline: none;
+ }
+
+ #user{
+    margin-bottom: 10px;
+ }
+ .label{
+    position:absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s;
+ }
+ .input-field:focus ~ .label, .input-field:valid ~ .label{
+ position: absolute;
+ top: -10px;
+ left: 20px;
+ font-size:14px; 
+ background: turquoise;
+ border-radius: 30px;
+ color: whitesmoke;
+padding: 0 10px;
+ }
+ .icon{
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 20px;
+  color: turquoise;
+ }
+.sign-div{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+         align-items: center;
+
+}
+ .sign{
+      background: #fff;
+      align-items: center;
+   width: 100px;
+   border: 1px solid white;
+border-radius: 20px;
+      color: turquoise;
+
+ }
+ .sign:hover{
+   background: transparent;
+
+ }
+ .check{
+   margin-left: 20px;
+ }
+ .for{
+   cursor: pointer;
+
+ }
+ .for:hover{
+   color: turquoise
+ }

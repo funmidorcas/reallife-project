@@ -702,9 +702,10 @@ small{
   width: 80%;
   margin-inline: auto;
   gap: 20px;
+  justify-content: center;
 }
 .app{
-          box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -712,15 +713,72 @@ small{
     box-sizing: border-box;
 
 }
+/* #note2{
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background: #8a1847;
+
+}
+#note3{
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background: #382dcf;
+
+} */
+/* #note1{
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background: #b61786;
+} */
 .dev{
   text-align: center;
   margin-block: 10px;
 }
+.dev-note{
+  text-align: center;
+}
+.spann{
+display: flex;
+flex-direction: column;
+width: 100%;
+justify-content: center;
+}
+.switch{
+  justify-self: center;
+padding-top: 20px;
+line-height: 40px;
+}
+.light{
+  font-size: 20px;
+  color: coral;
+}
 @media (max-width: 480px) {
   .approach{
     flex-direction: column;
+    /* display: flex;
+    justify-content: center;
+    justify-self: center; */
   }
-}
+  /* .app{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    
+  } */
+  }
 
 /* hr */
 .project{

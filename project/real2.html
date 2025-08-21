@@ -225,18 +225,38 @@
 <!-- <hr> -->
  <h1 class="my-app">My Approach</h1>
  <div class="approach">
-    <div class="app">
-      <h4 class="dev">Development and Launch </h4>
-       <p class="dev-note">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit sunt in, dolore aliquid nobis maiores laboriosam neque voluptatibus dignissimos modi?</p>    
-    </div>
-    <div class="app">
-      <h4 class="dev">Development and Launch </h4>
-       <p class="dev-note">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit sunt in, dolore aliquid nobis maiores laboriosam neque voluptatibus dignissimos modi?</p>    
-    </div>
-    <div class="app">
-      <h4 class="dev">Development and Launch </h4>
-       <p class="dev-note">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit sunt in, dolore aliquid nobis maiores laboriosam neque voluptatibus dignissimos modi?</p>    
-    </div>
+<div class="tog-container app">
+  <button class="switch" id="toggleBtn1" style="display: block;">
+    <span class="spann">Phase 1 <i class="fa-solid fa-lightbulb light"></i></span>
+  </button>
+  <div id="note1" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, porro.</p>
+  </div>
+</div>
+
+<div class="tog-container app">
+  <button class="switch" id="toggleBtn2" style="display: block;">
+    <span class="spann">Phase 2 <i class="fa-solid fa-lightbulb light"></i></span>
+  </button>
+  <div id="note2" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, dolor?</p>
+  </div>
+</div>
+
+<div class="tog-container app">
+  <button class="switch" id="toggleBtn3" style="display: block;">
+    <span class="spann">Phase 3 <i class="fa-solid fa-lightbulb light"></i></span>
+</button>
+
+<div id="note3" class="note" style="display: none;">
+    <h4 class="dev">Development and Launch</h4>
+    <p class="dev-note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptate.</p>
+  </div>
+</div>
+
+
  </div>
 
 <!-- <hr> -->
@@ -258,7 +278,7 @@
     <a href=""><i class="fa-brands fa-youtube four"></i></a>
   </div>
 
-<form id="survey-form">
+<!-- <form id="survey-form">
 <label for="name" id="name-label">Please enter your name:</label>
 <input id="name" type="text" placeholder="name" required> 
 
@@ -270,7 +290,26 @@
 
 <textarea>please enter your additional comment...</textarea>
   <input type="submit">
+</form> -->
+
+<form id="myForm">
+  <label for="name" id="name-label">Please enter your name:</label>
+  <input id="name" name="name" type="text" placeholder="Name" required> 
+
+  <label for="email" id="email-label">Please enter your e-mail:</label>
+  <input id="email" name="email" type="email" placeholder="Email" required>
+
+  <label for="work" id="work-label">Please describe your work:</label>
+  <input id="work" name="work" type="text" placeholder="e.g., gaming site" required>
+
+  <label for="comments" id="comments-label">Additional comments:</label>
+  <textarea id="comments" name="comments" placeholder="Please enter your additional comment..." rows="4"></textarea>
+
+  <input type="submit" value="Submit">
 </form>
+
+
+
 <!-- <hr> -->
  <footer>
  <div class="foot"><img class="foot-img" src="./asset/Logo.jpg"alt="logo">
@@ -297,7 +336,7 @@
 
 <!-- <hr> -->
 </div>
-<!-- <script src="real2.js"></script> -->
+<script src="real2.js"></script>
 </body>
 </html>
 

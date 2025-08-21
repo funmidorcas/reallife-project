@@ -6,12 +6,16 @@
  body{
     background: black;
     color:rgb(236, 177, 134);
-    justify-self: center;
-    margin-block: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+
 
  }
  h1{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
         padding: 8px;
 
  }

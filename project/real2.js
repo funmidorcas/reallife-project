@@ -43,6 +43,53 @@ notes.forEach((note, i) => {
 
     console.log('Form data submitted:', data);
   });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const progressBars = document.querySelectorAll('.progress');
+  progressBars.forEach(bar => {
+    const percent = bar.getAttribute('data-percent');
+    bar.style.width = percent;
+  });
+});
+
+
+
+
+
+const ctx = document.getElementById('skillChart').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['React', 'HTML', 'JavaScript', 'Tailwind CSS'],
+      datasets: [{
+        label: 'Skill Level (%)',
+        data: [90, 99, 75, 95],
+        backgroundColor: ['#61dafb', '#e34c26', '#f7df1e', '#38bdf8'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 100
+        }
+      }
+    }
+  });
+
+
+document.getElementById('resetBtn').addEventListener('click', () => {
+  const progressBars = document.querySelectorAll('.progress');
+  progressBars.forEach(bar => {
+    bar.style.width = '0%';
+  });
+});
+
+
+
 });
 
 

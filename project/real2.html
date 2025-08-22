@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
   <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
@@ -137,6 +140,7 @@
         <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, qui.</p>
 <button class="showw">Show More</button>
         </div>
+        
 </div>
 <!-- <hr> -->
 <h1 class="tech">Technical Skills</h1>
@@ -192,7 +196,8 @@
   </div>
 <!-- <hr> -->
 <h1 class="front">Frontend Development</h1>
-<div class="skill-container">
+<div class="skill-container" >
+  <div class="row-chart">
   <div class="skill">
     <span>React</span>
     <div class="bar">
@@ -204,9 +209,9 @@
   <div class="skill">
     <span>HTML</span>
     <div class="bar">
-      <div class="progress" style="width: 85%"></div>
+      <div class="progress" style="width: 99%"></div>
     </div>
-    <span class="percent">85%</span>
+    <span class="percent">99%</span>
   </div>
 
   <div class="skill">
@@ -225,6 +230,13 @@
     <span class="percent">95%</span>
   </div>
 </div>
+
+
+
+<div class="bar-chart">
+  <canvas id="skillChart"></canvas></div>
+</div>
+
 <!-- <hr> -->
 <div class="qul"><i class="qul-icon fa-solid fa-graduation-cap"></i><h1 class="qua">Qualifications</h1></div>
 
@@ -363,6 +375,7 @@
 </button>
 
  </footer>
+<button id="resetBtn"><i class="fa-solid fa-rotate-left"></i></button>
 
 
 <!-- <hr> -->

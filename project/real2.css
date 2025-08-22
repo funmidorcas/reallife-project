@@ -415,12 +415,12 @@ transform: rotate(360deg);
     aspect-ratio: 1;
 
 }
-.home-img .img-box .img-item img{
+.home-img .img-box .img-item .noting{
 position: absolute;
 top: 3rem; 
 display: block;
-width: 100%;
-height: 100%;
+width: 85%;
+/* height: 100%; */
 object-fit: cover;
 mix-blend-mode: lighten;
 aspect-ratio: inherit;
@@ -565,7 +565,6 @@ display: none;
 
 }
 
-/* Optional slow rotation */
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg);}
@@ -584,10 +583,121 @@ display: none;
   border: 1px solid coral;
   border-radius: 5px;
 }
+.talent{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  width: 80%;
+  margin-block: 50px;
+}
+.tal{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+width: 30%;
+margin-inline: auto;
+background: #00e676;
+border: none;
+border-radius: 20px;
+padding-block: 20px;
+padding-left: 25px;
+
+}
+.tall1{
+  background: #3744b9;
+  width: 90%;
+  padding: 20px;
+  border-bottom: 3px solid black;
+border-left: 3px solid black;
+
+}
+.tall2{
+background: #b97f13;
+width: 90%;
+padding: 20px;
+border-top: 3 solid brown;
+  border-bottom: 3px solid black;
+border-left: 3px solid black;
+
+}
+.tall3{
+background: #dd1111;
+width: 90%;
+padding: 20px;
+  border-bottom: 3px solid black;
+border-left: 3px solid black;
+}
+.tall4{
+background: #ad0f8b;
+width: 90%;
+padding: 20px;
+  border-bottom: 3px solid black;
+border-left: 3px solid black;
+
+}
+.len{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+width: 30%;
+margin-inline: auto;
+background: #ad0f8b;
+border: none;
+border-radius: 20px;
+padding-block: 20px;
+padding-left: 25px;
+}
+.lent1{
+background: #dd1111;
+  width: 90%;
+  padding: 20px;
+  border-top: 3px solid black;
+border-right: 3px solid black;
+}
+.lent2{
+background: #b97f13;
+width: 90%;
+padding: 20px;
+height: 90%;
+border-top: 3 solid brown;
+  border-top: 3px solid black;
+border-right: 3px solid black;
+}
+.lent3{
+  background: #3744b9;
+width: 90%;
+padding: 20px;
+  border-top: 3px solid black;
+border-right: 3px solid black;
+
+}
+.lent4{
+background: #00e676;
+width: 90%;
+height: 90%;
+padding: 20px;
+  border-top: 3px solid black;
+border-right: 3px solid black;
+
+}
 
 @media (max-width: 480px) {
     .gridd{
       grid-template-columns: repeat(2,1fr);
+    }
+    .talent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+    }
+    .tal{
+    width: 80%;
+    margin-inline: auto;
+
+    }
+    .len{
+          width: 80%;
+    margin-inline: auto;
+   /* height: 300px; */
     }
 }
 /* hr */

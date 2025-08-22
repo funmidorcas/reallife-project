@@ -274,6 +274,14 @@ justify-content: space-between;
     margin-left: 20px;
     font-size: 10px;
 }
+.sci-top{
+      display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 20px;
+    font-size: 10px;
+
+}
 .four{
     border-radius: 50%;
     padding-inline: 5px;
@@ -282,6 +290,11 @@ justify-content: space-between;
     font-size: 20px;
  filter:grayscale(0);
  
+}
+@media (max-width: 480px) {
+.sci-top{
+  gap: 5px;
+}
 }
 .four:hover{
 filter: grayscale(100);
@@ -741,8 +754,9 @@ border-right: 3px solid black;
     flex-direction: column;
   }
   .bar-chart{
-    width: 80%;
+    width: 90%;
     margin-inline: auto;
+    height: 300px;
   }
 .row-chart{
      width: 80%;
@@ -772,7 +786,7 @@ margin-bottom: 5px;
   height: 100%;
   width: 0;
   border-radius: 10px;
-transition: width 1s ease-in-out;
+/* transition: width 1s ease-in-out; */
 }
 
 .percent {

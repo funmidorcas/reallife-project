@@ -51,6 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const percent = bar.getAttribute('data-percent');
     bar.style.width = percent;
   });
+
 });
 
 
@@ -80,14 +81,12 @@ const ctx = document.getElementById('skillChart').getContext('2d');
     }
   });
 
-
-document.getElementById('resetBtn').addEventListener('click', () => {
+    document.getElementById('resetBtn').addEventListener('click', () => {
   const progressBars = document.querySelectorAll('.progress');
   progressBars.forEach(bar => {
     bar.style.width = '0%';
   });
 });
-
 
 
 });

@@ -55,6 +55,15 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+ const skills = document.querySelectorAll('.skill');
+
+ const progressBars = document.querySelectorAll('.progress');
+
+  progressBars.forEach(bar => {
+    const value = bar.getAttribute('data-progress');
+    bar.style.width = value + '%';
+  });
+
 
 
 

@@ -15,7 +15,7 @@
   <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
-<div class="hero">
+<div class="hero hero-bg">
    <div class="head-nav flex justify-between">
     <div class="img-nav w-[50px] h-[50px] flex">
         <img  class="logo w-full h-full rounded-full object-cover" src="./asset/Logo.jpg" alt="logo">
@@ -55,7 +55,7 @@
    
 
      <div  id="home">
- <button class="butt" >HELLO THERE</button>
+<div class="butt"> <button class="butt-bt" >HELLO THERE</button><i class="fa-solid fa-hand-wave butt-i"></i></div>
  <button class="but">OPEN TO WORK</button>
     </div>
 
@@ -92,7 +92,6 @@
     <buttons class="view">View projects</buttons>
    <button class="dow"> <a href="yourfile.pdf" download class="download">Download Resume</a></button>
 </div>
-
 <section class="about" id="about">
     <div class="home-img">
     <div class="img-box">
@@ -105,7 +104,7 @@
 <!-- </div>   -->
 
  <div class="about-div">
-<h1 class="abt">About   Me</h1>
+<h1 class="abt" id="about">About  Me</h1>
 <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsam delectus exercitationem incidunt odit ipsa illum voluptatum expedita voluptatibus ut?</p>
  </div>
 </section>
@@ -113,6 +112,7 @@
 
     <h1 class="ser-h1">Services</h1>
     <p class="ser-note">Here is what I can help you do professionally</p>
+   <!-- <div class="service-emer"> -->
     <div class="service">
     <div class="ser-grid">
         <h3 class="ser-note">LOREM</h3>
@@ -130,6 +130,7 @@
      <button class="showw">Show More</button>
     </div>
     </div>
+
     <div class="two-main">
     <div class="two-grid">
         <h3 class="ser-note">LOREM</h3>
@@ -144,6 +145,8 @@
         </div>
         
 </div>
+
+<!-- </div> -->
 <!-- <hr> -->
 <h1 class="tech">Technical Skills</h1>
   <div class="circle">
@@ -163,72 +166,47 @@
     <div class="grill"><p>Tailwind CSS</p></div>
     <div class="grill"><p>CSS</p></div>
     <div class="grill lonjj "><p>GitHub</p></div>
-    <!-- <div class="grill"><p>TypeScript</p></div> -->
     <div class="grill longg"><p class="long">React.Js</p></div>
-    <!-- <div class="grill"><p>Vue.Js</p></div>
-    <div class="grill"><p>Angular.Js</p></div> -->
   </div>
 
 
-  <div class="talent">
-
-    <div class="tal">
-              <div class="tall1">         
-                 <div class="tall2">        
-                    <div class="tall3">        
-                         <div class="tall4">
-                       
-                    </div>
-</div>
-</div>
-</div>
-    </div>
-
-    <div class="len">
-    <div class="lent1">
-          <div class="lent2">
-    <div class="lent3">
-    <div class="lent4">
-    </div>
-</div>
-          </div>
-    </div>
-    </div>
-
-  </div>
 <!-- <hr> -->
 <h1 class="front">Frontend Development</h1>
-<div class="skill-container" >
-<div class="row-chart">
-    <div class="skill" style="position: relative;">
-      <span>React</span>
-      <div class="bar"><div class="progress" style="width: 90%; background: green;"  data-progress="90"></div></div>
-      <span class="percent">90%</span>
+<div class="skill-container">
+  <div class="skill">
+    <span>React</span>
+    <div class="bar">
+      <div class="progress" style="width: 90%"></div>
     </div>
-
-<div class="skill" style="position: relative;">
-      <span>HTML</span>
-      <div class="bar"><div class="progress" style="width: 85%; background: green;"  data-progress="85"></div></div>
-      <span class="percent">85%</span>
-    </div>
-
-<div class="skill" style="position: relative;">
-      <span>JavaScript</span>
-      <div class="bar"><div class="progress" style="width: 75%; background: green;"   data-progress="75"></div></div>
-      <span class="percent">75%</span>
-    </div>
-
-<div class="skill" style="position: relative;">
-      <span>Tailwind CSS</span>
-      <div class="bar"><div class="progress" style="width: 95%; background: green;"  data-progress="95"></div></div>
-      <span class="percent">95%</span>
-    </div>
+    <span class="percent">90%</span>
   </div>
 
+  <div class="skill">
+    <span>HTML</span>
+    <div class="bar">
+      <div class="progress" style="width: 85%"></div>
+    </div>
+    <span class="percent">85%</span>
+  </div>
 
-<div class="bar-chart">
-  <canvas id="skillChart"></canvas></div>
+  <div class="skill">
+    <span>JavaScript</span>
+    <div class="bar">
+      <div class="progress" style="width: 75%"></div>
+    </div>
+    <span class="percent">75%</span>
+  </div>
+
+  <div class="skill">
+    <span>Tailwind CSS</span>
+    <div class="bar">
+      <div class="progress" style="width: 95%"></div>
+    </div>
+    <span class="percent">95%</span>
+  </div>
 </div>
+
+
 
 <!-- <hr> -->
 <div class="qul"><i class="qul-icon fa-solid fa-graduation-cap"></i><h1 class="qua">Qualifications</h1></div>
@@ -378,19 +356,6 @@
 <a href="https://wa.me/2348145816764" target="_blank"><i class="fa-brands fa-whatsapp four"></i></a>
   </div>
 
-<!-- <form id="survey-form">
-<label for="name" id="name-label">Please enter your name:</label>
-<input id="name" type="text" placeholder="name" required> 
-
-<label for="email" id="email-label">Please enter your e-mail:</label>
-<input id="email" type="email" required placeholder="email">
-
-<label for="number" id="number-label">Please decribe your work:</label>
-<input id="number" type="text" placeholder="eg: gaming site" required>
-
-<textarea>please enter your additional comment...</textarea>
-  <input type="submit">
-</form> -->
 
 <form id="myForm">
   <label for="name" id="name-label">Please enter your name:</label>

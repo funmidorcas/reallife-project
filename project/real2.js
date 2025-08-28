@@ -55,40 +55,40 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
- const skills = document.querySelectorAll('.skill');
+//  const skills = document.querySelectorAll('.skill');
 
- const progressBars = document.querySelectorAll('.progress');
+//  const progressBars = document.querySelectorAll('.progress');
 
-  progressBars.forEach(bar => {
-    const value = bar.getAttribute('data-progress');
-    bar.style.width = value + '%';
-  });
-
-
+//   progressBars.forEach(bar => {
+//     const value = bar.getAttribute('data-progress');
+//     bar.style.width = value + '%';
+//   });
 
 
-const ctx = document.getElementById('skillChart').getContext('2d');
 
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['React', 'HTML', 'JavaScript', 'Tailwind CSS'],
-      datasets: [{
-        label: 'Skill Level (%)',
-        data: [90, 99, 75, 95],
-        backgroundColor: ['#61dafb', '#e34c26', '#f7df1e', '#38bdf8'],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-          max: 100
-        }
-      }
-    }
-  });
+
+// const ctx = document.getElementById('skillChart').getContext('2d');
+
+//   new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: ['React', 'HTML', 'JavaScript', 'Tailwind CSS'],
+//       datasets: [{
+//         label: 'Skill Level (%)',
+//         data: [90, 99, 75, 95],
+//         backgroundColor: ['#61dafb', '#e34c26', '#f7df1e', '#38bdf8'],
+//         borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true,
+//           max: 100
+//         }
+//       }
+//     }
+//   });
 
     document.getElementById('resetBtn').addEventListener('click', () => {
   const progressBars = document.querySelectorAll('.progress');

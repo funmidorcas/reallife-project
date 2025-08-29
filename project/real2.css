@@ -4,15 +4,7 @@
     box-sizing: border-box;
 
 }
-html {
-  scroll-padding-top: 80px; 
-  scroll-behavior: smooth;
-          background-color: #0D0D0D;
-  color: white;
-
-}
-
-hero {
+.hero {
   color: #fff;
   height: 100%;
   position: relative;
@@ -43,9 +35,6 @@ hero::before {
 }  
 }
 /* hr */
-#about, #contact, #project, #about{
-transition: 0.5s;
-}
 
 
 /* hr */

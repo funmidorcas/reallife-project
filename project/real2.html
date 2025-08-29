@@ -15,8 +15,8 @@
   <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
-<div class="hero hero-bg">
-   <div class="head-nav flex justify-between">
+<!-- <div class="hero"> -->
+   <header class="head-nav flex justify-between">
     <div class="img-nav w-[50px] h-[50px] flex">
         <img  class="logo w-full h-full rounded-full object-cover" src="./asset/Logo.jpg" alt="logo">
         <h3 class="funmi">Funmilayo Adeniji</h3>
@@ -48,13 +48,13 @@
 
     </ul>
 </nav></div>
-</div>
+</header>
 
 
  <!-- <hr> -->
    
 
-     <div  id="home">
+     <div id="home">
 <div class="butt"> <button class="butt-bt" >HELLO THERE</button><i class="fa-solid fa-hand-wave butt-i"></i></div>
  <button class="but">OPEN TO WORK</button>
     </div>
@@ -92,6 +92,8 @@
     <buttons class="view">View projects</buttons>
    <button class="dow"> <a href="yourfile.pdf" download class="download">Download Resume</a></button>
 </div>
+
+<!-- <hr> -->
 <section class="about" id="about">
     <div class="home-img">
     <div class="img-box">
@@ -100,8 +102,6 @@
         </div>
     </div>
 </div>
-<!-- hero close div below -->
-<!-- </div>   -->
 
  <div class="about-div">
 <h1 class="abt" id="about">About  Me</h1>
@@ -117,17 +117,22 @@
     <div class="ser-grid">
         <h3 class="ser-note">LOREM</h3>
         <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, qui.</p>
-     <button class="showw">Show More</button>
+        <p class="hide-item hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex commodi cum quae, maxime nostrum.</p>
+     <button class="showw" id="showMoreButton">Show More</button>
     </div>
     <div class="ser-grid">
         <h3 class="ser-note">LOREM</h3>
         <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, qui.</p>
-     <button class="showw">Show More</button>
+                <p class="hide-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex commodi cum quae, maxime nostrum.</p>
+
+     <button class="showw" id="showMoreButton">Show More</button>
     </div>
     <div class="ser-grid media">
         <h3 class="ser-note">LOREM</h3>
         <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, qui.</p>
-     <button class="showw">Show More</button>
+                <p class="hide-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex commodi cum quae, maxime nostrum.</p>
+
+     <button class="showw" id="showMoreButton">Show More</button>
     </div>
     </div>
 
@@ -135,13 +140,17 @@
     <div class="two-grid">
         <h3 class="ser-note">LOREM</h3>
         <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, qui.</p>
-       <button class="showw">Show More</button>
+                <p class="hide-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex commodi cum quae, maxime nostrum.</p>
+
+       <button class="showw" id="showMoreButton">Show More</button>
   
     </div>
     <div class="two-grid">
         <h3 class="ser-note">LOREM</h3>
         <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, qui.</p>
-<button class="showw">Show More</button>
+                <p class="hide-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex commodi cum quae, maxime nostrum.</p>
+
+<button class="showw" id="showMoreButton">Show More</button>
         </div>
         
 </div>
@@ -173,37 +182,37 @@
 <!-- <hr> -->
 <h1 class="front">Frontend Development</h1>
 <div class="skill-container">
-  <div class="skill">
-    <span>React</span>
-    <div class="bar">
-      <div class="progress" style="width: 90%"></div>
-    </div>
-    <span class="percent">90%</span>
+<div class="skills">
+  <span>React</span>
+  <div class="bars">
+    <div class="progresss" style="width: 75%;"></div>
   </div>
+  <span class="percents">75%</span>
+</div>
 
-  <div class="skill">
-    <span>HTML</span>
-    <div class="bar">
-      <div class="progress" style="width: 85%"></div>
-    </div>
-    <span class="percent">85%</span>
+<div class="skills">
+  <span>HTML</span>
+  <div class="bars">
+    <div class="progresss" style="width: 95%;"></div>
   </div>
+  <span class="percents">95%</span>
+</div>
 
-  <div class="skill">
-    <span>JavaScript</span>
-    <div class="bar">
-      <div class="progress" style="width: 75%"></div>
-    </div>
-    <span class="percent">75%</span>
+<div class="skills">
+  <span>JavaScript</span>
+  <div class="bars">
+    <div class="progresss" style="width: 90%;"></div>
   </div>
+  <span class="percents">90%</span>
+</div>
 
-  <div class="skill">
-    <span>Tailwind CSS</span>
-    <div class="bar">
-      <div class="progress" style="width: 95%"></div>
-    </div>
-    <span class="percent">95%</span>
+<div class="skills">
+  <span>Tailwind CSS</span>
+  <div class="bars">
+<div class="progresss" style="width: 95%;"></div>
   </div>
+  <span class="percents">95%</span>
+</div>
 </div>
 
 
@@ -215,22 +224,22 @@
  <div class="vertical-line"></div>
 
  <div class="edu-house">
-<div class="school"><div class="iandh"><i class="fa-solid fa-circle"></i>
+<div class="school"><div class="iandh"><i class="fa-solid fa-circle" stay></i>
 <h1 class="cert">B.Sc in Geography And Environmental Science</h1></div>
 <p class="sch">Federal University Of Ilorin</p>
 <small>2015-2019</small></div>
-<div class="school"><div class="iandh"><i class="fa-solid fa-circle"></i>
-<h1 class="cert">B.Sc in Geography And Environmental Science</h1></div>
-<p class="sch">Federal University Of Ilorin</p>
-<small>2015-2019</small></div>
-<div class="school"><div class="iandh"><i class="fa-solid fa-circle"></i>
-<h1 class="cert">B.Sc in Geography And Environmental Science</h1></div>
-<p class="sch">Federal University Of Ilorin</p>
-<small>2015-2019</small></div>
-<div class="school"><div class="iandh"><i class="fa-solid fa-circle"></i>
-<h1 class="cert">B.Sc in Geography And Environmental Science</h1></div>
-<p class="sch">Federal University Of Ilorin</p>
-<small>2015-2019</small></div>
+<div class="school"><div class="iandh"><i class="fa-solid fa-circle stay"></i>
+<h1 class="cert">Women Techsters Software Development Bootcamp</h1></div>
+<p class="sch">Tech4dev Initiative</p>
+<small>2024</small></div>
+<div class="school"><div class="iandh"><i class="fa-solid fa-circle stay"></i>
+<h1 class="cert">FreeCode Camp Frontend Development</h1></div>
+<p class="sch">FreeCode Camp</p>
+<small>2024</small></div>
+<div class="school"><div class="iandh"><i class="fa-solid fa-circle stay"></i>
+<h1 class="cert">African Girls in Tech cohort 8.0</h1></div>
+<p class="sch">Africa Agility</p>
+<small>2025</small></div>
 </div>
 </div>
 
@@ -398,9 +407,8 @@
 </button>
 
  </footer>
-<button id="resetBtn"><i class="fa-solid fa-rotate-left"></i></button>
+<!-- <button id="resetBtn"><i class="fa-solid fa-rotate-left"></i></button> -->
 
-</div>
 <!-- <hr> -->
 <script src="real2.js"></script>
 </body>

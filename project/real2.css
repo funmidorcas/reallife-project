@@ -4,9 +4,15 @@
     box-sizing: border-box;
 
 }
+html {
+  scroll-padding-top: 80px; 
+  scroll-behavior: smooth;
+          background-color: #0D0D0D;
+  color: white;
 
+}
 
-.hero {
+hero {
   color: #fff;
   height: 100%;
   position: relative;
@@ -14,7 +20,7 @@
         background-color: #0D0D0D;
 
 }
-.hero::before {
+hero::before {
   content: "FRONTEND DEVELOPER FRONTEND DEVELOPER FRONTEND DEVELOPER ";
   position: absolute;
   top: 0;
@@ -30,15 +36,19 @@
   z-index: 1;
 }
 @media (max-width: 480px) {
-.hero::before {
+hero::before {
   width: 100%;
   height: 100%;
 
 }  
 }
 /* hr */
+#about, #contact, #project, #about{
+transition: 0.5s;
+}
 
 
+/* hr */
 
 .head-nav{
     display: flex;
@@ -191,6 +201,7 @@ justify-content: space-between;
       gap:20px;
       justify-content: center; 
       margin-top: 100px;
+      margin-bottom: 10px;
 
     }
     .butt{
@@ -236,7 +247,7 @@ justify-content: space-between;
 .parr{
   font-size: 0.5rem;
   opacity: 0.4;
-  color:red;
+  /* color:red; */
   width: 100px;
   justify-self: center;
 
@@ -424,6 +435,14 @@ height: 300px;
     display: flex;
     flex-direction: column;
 }
+/* .me{
+  border-radius: 50%;
+  width: 150px;
+  height:150px;
+   aspect-ratio: 1;
+  object-fit: cover; 
+}  */
+
 }
 .home-img{
     display: flex;
@@ -450,7 +469,7 @@ height: 300px;
     position: absolute;
     width: 50rem;
     height: 50rem;
-    background: conic-gradient(transparent, transparent, transparent, chartreuse);
+    background: conic-gradient(transparent, transparent, transparent, #f5d394);
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
 } 
@@ -476,7 +495,7 @@ transform: rotate(360deg);
     aspect-ratio: 1;
 
 }
-.home-img .img-box .img-item .noting{
+.home-img .img-box .img-item .nothing{
 position: absolute;
 top: 3rem; 
 display: block;
@@ -487,6 +506,7 @@ mix-blend-mode: lighten;
 aspect-ratio: inherit;
 
 }
+
 /* hr */
 .ser-h1{
     font-size: 30px;
@@ -521,7 +541,7 @@ margin-inline: auto;
 margin-top: 10px;
     flex-basis: 31%;
     border-radius: 10px;
-    margin-bottom: 5%;
+  margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     text-align: center;
@@ -563,7 +583,9 @@ display: flex;
     border-radius: 20px;
     padding: 10px;
 }
-
+.hide-item{
+  display:none;
+}
 
 /* hr */
 .tech{
@@ -620,10 +642,6 @@ display: flex;
   border-radius: 5px;
 }
 
-    /* .longg{
-      grid-column-end: 4;
-      grid-column-start: 4;
-    } */
 @media (max-width: 480px) {
     .gridd{
       grid-template-columns: repeat(2,1fr);
@@ -654,17 +672,17 @@ display: flex;
   border-radius: 20px;
 }
 
-.skill {
+ .skills {
   margin-bottom: 25px;
 }
 
-.skill span {
+.skills span {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
 }
 
-.bar {
+.bars {
   background: #fff;
   height: 14px;
   border-radius: 10px;
@@ -673,18 +691,18 @@ display: flex;
   width: 100%;
 }
 
-.progress {
+.progresss {
   height: 100%;
-  /* width: 10%; */
   background: #00ff99;
   border-radius: 10px 0 0 10px;
-  /* transition: width 1s ease; */
 }
-.percent {
+.percents {
   font-size: 14px;
   text-align: right;
   color: #ccc;
-}
+} 
+
+
 
 @media (max-width: 480px) {
 .skill-container{
@@ -722,6 +740,7 @@ display: flex;
 .iandh{
   display: flex;
   gap: 10px;
+  justify-content: center;
 
 }
 .school{
@@ -774,35 +793,6 @@ small{
     box-sizing: border-box;
 
 }
-/* #note2{
-        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 15px;
-    box-sizing: border-box;
-    background: #8a1847;
-
-}
-#note3{
-        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 15px;
-    box-sizing: border-box;
-    background: #382dcf;
-
-} */
-/* #note1{
-        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 15px;
-    box-sizing: border-box;
-    background: #b61786;
-} */
 .dev{
   text-align: center;
   margin-block: 10px;
@@ -828,17 +818,7 @@ line-height: 40px;
 @media (max-width: 480px) {
   .approach{
     flex-direction: column;
-    /* display: flex;
-    justify-content: center;
-    justify-self: center; */
   }
-  /* .app{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    
-  } */
   }
 
 /* hr */

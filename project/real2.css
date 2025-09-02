@@ -405,25 +405,42 @@ filter: grayscale(100);
 .about-div{
       margin-top: 50px;
 box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
- padding: 10px;
- justify-self: center;
+ padding-inline: 10px;
          box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.8);
     flex-basis: 31%;
     border-radius: 10px;
     box-sizing: border-box;
 height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .lorem{
   text-align: center;
 }
+.abt{
+  font-size: 30px;
+}
+
 @media (max-width: 480px) {
 .about-div{
     height: auto;
+    padding-block: 15px;
 }
 .about{
     display: flex;
     flex-direction: column;
 }
+.me{
+  border-radius: 50%;
+  width: 150px;
+  height:150px;
+   aspect-ratio: 1;
+  object-fit: cover; 
+} 
+
+}
+
 /* .me{
   border-radius: 50%;
   width: 150px;
@@ -432,7 +449,7 @@ height: 300px;
   object-fit: cover; 
 }  */
 
-}
+
 .home-img{
     display: flex;
     justify-content: center;
@@ -482,14 +499,15 @@ transform: rotate(360deg);
     overflow: hidden;
     background: black;
     aspect-ratio: 1;
+    object-fit: cover;
 
 }
-.home-img .img-box .img-item .nothing{
-position: absolute;
+.home-img .img-box .img-item .nothing{ 
+ position: absolute;
 top: 3rem; 
 display: block;
-width: 85%;
-/* height: 100%; */
+width: 85%; 
+ height: 100%;
 object-fit: cover;
 mix-blend-mode: lighten;
 aspect-ratio: inherit;

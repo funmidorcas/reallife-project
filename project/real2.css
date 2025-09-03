@@ -431,13 +431,13 @@ justify-content: center;
     display: flex;
     flex-direction: column;
 }
-.me{
+/* .me{
   border-radius: 50%;
   width: 150px;
   height:150px;
    aspect-ratio: 1;
   object-fit: cover; 
-} 
+}  */
 
 }
 

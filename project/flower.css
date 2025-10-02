@@ -34,7 +34,7 @@ transition: 0.5s;
 .four{
     border-radius: 50%;
     padding-inline: 3px;
-    padding-block: 3px;
+    padding-block: 5px;
     background: white;
     color:rgb(96, 96, 230);
  filter:grayscale(0);
@@ -47,6 +47,8 @@ filter: grayscale(100);
 @media (max-width: 480px) {
 .purple{
  font-size: 5px;
+ /* width: 95%;
+ margin-inline: auto; */
 }
 }
 /* hr */
@@ -79,6 +81,8 @@ ul{
        flex-direction: row;
 gap: 20px; 
 transition: 0.5s;
+position: relative;
+inset-block: 0;
 }
 nav ul li::after{
     content: '';
@@ -111,6 +115,8 @@ display: block;
 margin-top: 5px;
 margin-inline: 10px;
   cursor: pointer;
+  position: relative;
+  left:40px;
 
  }
 ul{
@@ -120,14 +126,15 @@ ul{
     margin-top: 40px;
     padding-inline: 5px;
     transition: 0.5s;
+    padding-block: 5px;
 }
 .close{
    color:rgb(96, 96, 230);
  display: block;
 }
 .flowershop{
-    font-size: 10px;
-    width: 60px;
+    /* font-size: 10px;
+    width: 60px; */
     margin-top: 5px;
 }
 }

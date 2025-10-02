@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Inter", sans-serif;
+}
+
+.purple{
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+        width: 80%;
+    margin-inline: auto;
+    padding: 10px;
+color: white;
+font-size: 10px;
+}
+.firstA{
+text-decoration: underline;
+color: violet;
+transition: 0.5s;
+}
+.firstA:hover{
+    color: white;
+
+}
+.iconTop{
+    display: flex;
+    gap:10px;
+
+}
+.four{
+    border-radius: 50%;
+    padding-inline: 3px;
+    padding-block: 3px;
+    background: white;
+    color:rgb(96, 96, 230);
+ filter:grayscale(0);
+transition: 0.5s;
+
+}
+.four:hover{
+filter: grayscale(100);
+}
+@media (max-width: 480px) {
+.purple{
+ font-size: 5px;
+}
+}
+/* hr */
+nav{
+    display: flex;
+    justify-content: space-between;
+        width: 80%;
+    margin-inline: auto;
+    padding-right: 10px;
+    padding-block: 10px;
+}
+.logodiv{
+    display: flex;
+    gap:5px;
+    height: 30px;
+}
+.flowericon{
+    border-radius: 50%;
+    padding-inline: 5px;
+    padding-block: 5px;
+    background: purple;
+
+}
+.flowershop{
+    /* margin-top: 5px; */
+    height: 5px;
+}
+ul{
+       display: flex;
+       flex-direction: row;
+gap: 20px; 
+transition: 0.5s;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #eb8079;
+    display: block;
+margin: auto;
+transition: 0.5s;
+}
+nav ul li:hover::after{
+width: 100%;
+}
+.menu .close{
+    display: none;
+    visibility: hidden;
+}
+.icon{
+    display: none;
+    visibility: hidden;
+}
+@media (max-width: 480px) {
+nav{
+        overflow: hidden;
+}
+    .menu{
+visibility: visible;
+display: block;
+   color:rgb(96, 96, 230);
+margin-top: 5px;
+margin-inline: 10px;
+  cursor: pointer;
+
+ }
+ul{
+    display: none;
+    flex-direction: column;
+    background: #eb8079;
+    margin-top: 40px;
+    padding-inline: 5px;
+    transition: 0.5s;
+}
+.close{
+   color:rgb(96, 96, 230);
+ display: block;
+}
+.flowershop{
+    font-size: 10px;
+    width: 60px;
+    margin-top: 5px;
+}
+}

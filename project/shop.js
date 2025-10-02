@@ -5,13 +5,12 @@ function applyCategory(category) {
       const productCategory = product.getAttribute('data-category');
   
       if (category === 'all' || productCategory === category) {
-        product.style.display = 'block'; // Show
+        product.style.display = 'block'; 
       } else {
-        product.style.display = 'none'; // Hide
+        product.style.display = 'none'; 
       }
     });
   
-    // Highlight active button
     const buttons = document.querySelectorAll('.category-button');
     buttons.forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');

@@ -121,8 +121,8 @@ display: block;
 margin-top: 5px;
 margin-inline: 10px;
   cursor: pointer;
-  position: relative;
-  left:30px;
+  /* position: relative;
+  left:40px; */
 
  }
 ul{
@@ -222,16 +222,17 @@ gap: 20px;
                 display: flex;
         flex-direction: column;
         width: 100%;
+        /* padding-left: 10px; */
     }
 .forwriteup{
-padding-left: 5px;
-width: 70%;
+width: 80%;
+margin-left: 10px;
 text-align: start;
 height: 50vh;
 /* background: red; */
 }
 .trusteddiv{
-width: 100%;
+width: 80%;
 font-size: 12px;
 }
 .ultimate{
@@ -254,7 +255,7 @@ font-size: 12px;
 .ratings{
     top: 10px;
 position: relative;
-left: 100px;
+left: 80px;
 }
 .rate{
     display: flex;
@@ -262,32 +263,31 @@ left: 100px;
 }
 
 .positions{
-    margin-top: 1px;
     width: 100%;
         position: relative;
         /* bottom: 20vh; */
-        left:  60%; 
+        left:  55vw; 
+        /* background: red; */
 
 }
 
 .securediv{
     font-size: 12px;
-    width: 60%;
+    width: 70%;
     position: absolute;
-    left: -30px;
+    /* left: -30px; */
 }
 .fastdelivery{ 
     position: absolute;
-    right: 60px;
+    right: 40px;
     bottom:20px;
     font-size: 12px;
-    width: 60%;
+    width: 55%;
 
 }
 .stamp{
     position: absolute;
- top:-30px;
- 
+ /* bottom:0px; */
 }
 }
 
@@ -366,7 +366,10 @@ background: #eb8079;
 .ratings{
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    margin-left: 20px;
+    /* width: 80%; */
+    /* background: red; */
+    font-size: 12px;
 
 }
 .rate{
@@ -415,7 +418,9 @@ color: purple
 .shopby{
     font-size: 16px;
 }
-
+.firstslide {
+width: 100%;
+}
 .slides {
   scroll-snap-type: x mandatory;
   overflow-x: auto;

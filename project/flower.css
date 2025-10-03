@@ -95,6 +95,13 @@ transition: 0.5s;
 nav ul li:hover::after{
 width: 100%;
 }
+.menudiv{
+    display: none;
+}
+.closediv{
+        display: none;
+
+}
 .menu .close{
     display: none;
     visibility: hidden;
@@ -121,14 +128,14 @@ margin-inline: 10px;
 ul{
     display: none;
     flex-direction: column;
-    background: #eb8079;
+    background: purple;
     margin-top: 40px;
-    padding-inline: 5px;
+    padding-inline: 20px;
     transition: 0.5s;
     padding-block: 5px;
 }
 .close{
-   color:rgb(96, 96, 230);
+   color:peru;
  display: block;
 }
 .flowershop{
@@ -136,4 +143,289 @@ ul{
     width: 60px; */
     margin-top: 5px;
 }
+.menudiv{
+    display: block;
 }
+.closediv{
+        display: block;
+
+}
+
+}
+
+/* hr */
+
+.firstSection{
+    width: 80%;
+    margin-inline: auto;
+    background-image: url(https://thumbs.dreamstime.com/b/daisies-woman-park-lady-holds-bunch-flowers-spring-scenery-sunny-day-nature-sitting-outside-wears-blue-shirt-385983505.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+height: 80vh;
+display: flex;
+gap: 20px;
+}
+.forwriteup{
+ display: flex;
+ flex-direction: column;
+ padding-left: 8%;
+ padding-top: 50px;
+ width: 50%;
+ /* background-color: blue; */
+}
+.trusteddiv{
+    display: flex;
+    gap: 10px;
+    background: pink;
+    position: relative;
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    /* inset:5px; */
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.ultimate{
+    font-size: 2em;
+    font-weight: 600;
+}
+.givepurple{
+    color: blueviolet;
+}
+.lorem{
+    font-size: 12px;
+    opacity: 1;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.shopnow{
+    display: flex;
+    width: 80%;
+    gap: 30px;
+    margin-block: 30px;
+}
+.shoparrow{
+    background: purple;
+    padding: 8px;
+    border-radius: 20px;
+}
+.viewall{
+    text-decoration: underline;
+    margin-top: 5px;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+.firstSection{
+                display: flex;
+        flex-direction: column;
+    }
+.forwriteup{
+padding-left: 5px;
+width: 70%;
+text-align: start;
+height: 50vh;
+/* background: red; */
+}
+.trusteddiv{
+width: 100%;
+font-size: 12px;
+}
+.ultimate{
+font-size: 16px; 
+width: 70%;
+}
+.shopnow{
+    width: 100%;
+    gap: 10px;
+    font-size: 16px;
+
+        justify-content: space-between;
+font-size: 12px;
+}
+.shoparrow{
+    padding: 5px;
+}
+.ratingbig{
+    flex-direction: column;
+}
+
+.ratings{
+    top: 10px;
+position: relative;
+left: 100px;
+}
+.rate{
+    display: flex;
+    gap: 10px;
+}
+
+.positions{
+    margin-top: 1px;
+    width: 100%;
+        position: relative;
+        /* bottom: 20vh; */
+        left:  70%; 
+
+}
+
+.securediv{
+    font-size: 12px;
+    width: 80%;
+    position: absolute;
+    left: -40px;
+}
+.fastdelivery{ 
+    position: absolute;
+    left: -10px;
+}
+.stamp{
+    position: absolute;
+ top:-30px;
+ 
+}
+}
+
+
+.positions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 50%;
+     /* background: green; */
+        position: relative;
+}
+
+.securediv{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    background: #fff;
+    top:70px;
+    right: 100px;
+    /* height: 40px; */
+    /* margin: 20px; */
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 20px;
+} 
+.fastdelivery{
+        display: flex;
+    gap: 5px;
+    position: absolute;
+    background: #fff;
+    bottom:120px;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.stamp{
+    position: absolute;
+    bottom:40px;
+    right: 100px;
+
+}
+.stamp img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+aspect-ratio: 1;
+object-fit: cover;
+
+}
+
+
+
+
+.ratingbig{
+    display: flex;
+}
+.ratingdiv{
+    display: flex;
+}
+.ratingdiv img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+aspect-ratio: 1;
+object-fit: cover;
+margin-right: -15px;
+}
+.ratingplus{
+    width: 50px;
+height: 50px;
+border-radius: 50%;
+background: #eb8079;
+}
+.ratings{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+}
+.rate{
+    display: flex;
+    gap: 10px;
+}
+    /* hr */
+.occasions{
+    text-align: center;
+    width: 80%;
+margin-inline: auto;
+margin-block: 50px;
+
+}
+.shopby{
+    font-size: 2rem;
+}
+.shopby span{
+color: purple
+}
+.firstslide {
+  overflow-x: auto;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.slides {
+  display: flex;
+  gap: 50px;
+  padding: 1rem;
+}
+
+.slide-item p{
+  text-align: center;
+      font-weight: 700;
+}
+
+.slide-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 480px) {
+.shopby{
+    font-size: 16px;
+}
+
+.slides {
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  /* overflow-x: hidden; */
+}
+
+.slide-item {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+}
+
+
+/* hr */

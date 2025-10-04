@@ -533,14 +533,13 @@ font-size: 12px;
 
 /* hr */
 
-#aboutus{
+.aboutus{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
     margin-inline: auto;
-  /* height: 100vh; */
   margin-block: 50px;
-background: #eb8079;
+/* background: #eb8079; */
 }
 
 .rounding{
@@ -555,6 +554,7 @@ aspect-ratio: 1;
 object-fit: cover;
 position: relative;
 padding-top: 30px;
+margin-top: 50px;
 }
 .ringone{
     width: 80%;
@@ -583,35 +583,41 @@ padding: 50px;
     justify-self: center;
 
 }
+
 @media (max-width: 480px) {
-#aboutus{
+.aboutus{
 flex-direction: column;
 width: 100%;
 }
 .rounding{
 width: 90%;
+margin-inline: auto;
 }
-.about{
-    background: green;
-    width: 120%;
+.aboutme{
+    /* background: green; */
+    width: 400px;
+    margin-inline: auto;
+    padding: 10px;
 }
-.about h1{
+.deliver{
     font-size: 16px;
     width: 80%;
 }
-.purplebox {
+/* .purplebox {
 
-}
+} */
 }
 
-.about{
-    width: 50%;
+.aboutme{
+    /* width: 50%; */
+    width:400px;
     margin-top: 50px;
+    padding-right: 20px;
 }
 .abouth3{
     margin-block: 20px;
 }
-.about h1{
+.deliver{
     width: 60%;
     font-size: 2rem;
     color: purple;
@@ -637,7 +643,7 @@ width: 90%;
     background: gray;
 }
 .categories{
-    justify-self: center;
+    padding-inline: 10px;
 }
 .jenny{
 font-family: "Dancing Script", cursive;

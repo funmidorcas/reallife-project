@@ -581,7 +581,7 @@ padding: 50px;
     display: flex;
     justify-content: center;
     justify-self: center;
-
+     color: #fff;
 }
 
 @media (max-width: 480px) {
@@ -650,3 +650,255 @@ font-family: "Dancing Script", cursive;
 font-weight: 900;
 margin-block: 50px;
 }
+
+/* hr */
+
+.fourthsection{
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 30px;
+
+}
+.topsellerdiv{
+    display: flex;
+    justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.topseller{
+    font-size: 2rem;
+
+}
+.purplecolor{
+    color:purple;
+}
+.viewmepro{
+    text-decoration: underline;
+    background: purple;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+.bighouseme{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+     gap: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+
+
+}
+.columnflex{
+    display: flex;
+    flex-direction: column;
+}
+.columnflex::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.subflex{
+        background-image: url(./asset/me.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+aspect-ratio: 1;
+object-fit: cover;
+padding-block: 20px;
+padding-inline: 10px;
+transition: 0.5s;
+}
+.subflex:hover{
+    transform: rotateX(180deg);
+}
+@media (max-width: 480px) {
+.fourthsection{
+  width: 100%;
+}
+.ourproduct, .topsellerdiv{
+width: 80%;
+margin-inline: auto;
+}
+.topseller{
+    font-size: 16px;
+
+}
+}
+.percentandicon{
+    display: flex;
+    justify-content: space-between;
+    color: peru;
+}
+.iconflex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.firstpercentage{
+    height: 30px;
+        background: #eb8079;
+    padding-inline: 5px;
+    padding-top: 3px;
+    border-radius: 20px;
+
+}
+.percentage{
+    background: #eb8079;
+    padding: 8px;
+    border-radius: 20px;
+    margin-top: px;
+
+}
+
+.timingpurple{
+    display: flex;
+    gap:10px;
+    background: purple;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 90%;
+    margin-inline: auto;
+    padding: 10px;
+}
+.purpose{
+    color: #fff;
+    font-size: 10px;
+}
+.timeandday span{
+    color: blueviolet;
+}
+.dot{
+    margin-top: 8px;
+    color: #fff;
+}
+.subflexnote{
+    padding-inline: 1px;
+    padding-block: 10px;
+}
+.stardiv{
+    display: flex;
+    justify-content: space-between;
+}
+.stardiv i{
+    color: yellow;
+}
+.bouq{
+    opacity: 0.4;
+    font-size: 13px;
+}
+.subflexnote h1{
+    font-weight: 700;
+}
+.pricing{
+    display: flex;
+    gap: 20px;
+}
+.oldprice{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* hr */
+
+.fifthsection{
+    margin-inline: auto;
+    width: 80%;
+    display: flex;
+    gap: 20px;
+  height: 80vh; 
+  margin-block: 100px;
+}
+.fifthbg{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRAILmKfl-J55ISOAOnUSTvCSN9gNu9gzLBdbsFmBfOJFKOWJwBdm7FZ2B1M9Qv_MzTq0&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px;
+aspect-ratio: 1;
+object-fit: cover;
+height: 100%;
+width: 30%;
+}
+.fifthbg2{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ij-mkmuQCV7y0IOpwccGcxj3aee56XboHLlZq7QGsoVgxD7VJFIxze_ZpKj0R-pnmos&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px;
+aspect-ratio: 1;
+object-fit: cover;
+height: 100%;
+width: 30%;
+}
+
+.fifthtimebg{
+    
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQYnDSlWd762vXy-j-De1_4oj6ScXrIFbhLUT5ItDE_d2tyPjbcM6Qf2qwNY-RklqNX1Q&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    border-radius: 10px;
+aspect-ratio: 1;
+object-fit: cover;
+height: 100%;
+text-align: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+width: 40%;
+color: white
+}
+.fifthtimebg span{
+color: purple;
+font-weight: 700;
+}
+.inline{
+    border: 2px solid #fff;
+    width: 80%;
+    height: 90%;
+    margin-inline: auto;
+    margin-block: 10%;
+border-radius: 10px;
+}
+@media (max-width:480px) {
+    .fifthsection{
+        width: 100%;
+    }
+    /* .secondtimepurple span{
+font-size: 13px;
+} */
+}
+.secondtimepurple{
+    display: flex;
+    background: purple;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 10px;
+    color: gray;
+    margin-top: 20px;
+
+}
+.secondtimepurple span{
+color: black; 
+ /* font-size: 2rem; */
+}
+.getoff{
+    margin-block: 10px;
+}
+.secondshopnow{
+    background: purple;
+    width: 60%;
+    border-radius: 30px;
+    padding: 5px;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+/* hr */

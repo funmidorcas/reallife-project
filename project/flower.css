@@ -247,6 +247,8 @@ width: 50%;
     gap: 50px;
     font-size: 16px;
 font-size: 12px;
+    cursor: pointer;
+
 }
 .shoparrow{
     padding: 5px;
@@ -342,9 +344,6 @@ aspect-ratio: 1;
 object-fit: cover;
 
 }
-
-
-
 
 .ratingbig{
     display: flex;
@@ -678,6 +677,8 @@ margin-block: 50px;
     border-radius: 20px;
     padding: 10px;
     color: white;
+        cursor: pointer;
+
 }
 .bighouseme{
     display: flex;
@@ -704,7 +705,7 @@ margin-block: 50px;
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
-    width: 250px;
+    width: 200px;
     height: 200px;
     border-radius: 10px;
 aspect-ratio: 1;
@@ -899,6 +900,163 @@ color: black;
     padding: 5px;
     margin-inline: auto;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 /* hr */
+.sixsection{
+    display: flex;
+   background: rgb(53, 53, 235); 
+   gap: 20px;
+   padding: 20px;
+width: 100%;
+overflow: hidden;
+}
+@media (max-width:480px) {
+    .sixsection{
+        overflow-x: auto;
+    }
+}
+
+/* hr */
+.sevenextension{
+    width: 80%;
+    margin-inline: auto;
+margin-top: 40px;
+}
+.dealdiv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.dealdiv h1{
+    font-weight: 800;
+
+}
+.dealdiv span{
+    color: purple;
+}
+.dealdiv p{
+width: 40%;
+font-size: 13px;
+}
+
+
+.sevensection{
+    display: flex;
+    height: 100vh;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 50px;
+    justify-content: space-between;
+}
+.secondbighouse{
+    display: grid;
+gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:480px) {
+    .secondbighouse{
+    overflow-x: auto;
+        margin-top: 20px;
+
+    }
+    .sevensection{
+    width: 90%;
+    flex-direction: column;
+    }
+
+}
+
+
+/* hr */
+.eightsection{
+    width: 80%;
+    margin: auto;
+margin-bottom: 50px;
+}
+.forcenter{
+    text-align: center;
+    margin-block: 60px;
+}
+.forcenter span{
+    color: purple;
+}
+.clientsay{
+font-size: 2rem;
+font-weight: 700;
+}
+.reviewhouse{
+    display: flex;
+    gap: 20px;
+}
+.review{
+    background: #eed1cf;
+box-shadow: 5px 5px 10px rgb(241, 166, 166);    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+}
+.staricon5{
+    color: yellow;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.staricon5 span{
+color: #fff;
+margin-bottom: px;
+}
+
+.gorgeous{
+    font-weight: 500;
+    margin-block: 10px;
+}
+.reviewnote{
+opacity: 0.8;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.reviewbg{
+    background: url(./asset/bg.jpg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+
+}
+.reviewpicture{
+    display: flex;
+    gap: 10px;
+}
+.reviewname span{
+color: white;
+font-size: 13px;
+}
+
+@media (max-width:480px) {
+.review{
+    width: 80%;
+}
+.reviewname{
+    margin-top: 10px;
+
+}
+.reviewhouse{
+    flex-direction: column;
+}
+}
+.buttongrp{
+    display: flex;
+    gap:5px;
+        justify-content: center;
+margin-top: 20px;
+}
+.buttongrp button{
+    width: 20px;
+    height: 2px;
+    background: #eb8079;
+    cursor: pointer;
+}

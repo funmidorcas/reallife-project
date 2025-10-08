@@ -164,9 +164,10 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-height: 80vh;
+height: 100vh;
 display: flex;
 gap: 20px;
+border-radius: 20px;
 }
 .forwriteup{
  display: flex;
@@ -174,6 +175,8 @@ gap: 20px;
  padding-left: 8%;
  padding-top: 50px;
  width: 50%;
+ color: white;
+
  /* background-color: blue; */
 }
 .trusteddiv{
@@ -187,6 +190,8 @@ gap: 20px;
     /* inset:5px; */
     font-size: 12px;
     margin-bottom: 20px;
+    color: white;
+
 }
 .ultimate{
     font-size: 2em;
@@ -224,13 +229,16 @@ gap: 20px;
                 display: flex;
         flex-direction: column;
         width: 100%;
+
         /* padding-left: 10px; */
     }
 .forwriteup{
-width: 80%;
-margin-left: 10px;
+width: 60%;
 text-align: start;
 height: 50vh;
+ margin-left: 10px;
+ padding-left: 0;
+
 /* background: red; */
 }
 .trusteddiv{
@@ -280,7 +288,7 @@ left: 80px;
     font-size: 12px;
     width: 70%;
     position: absolute;
-    /* left: -30px; */
+    left: 30px;
 }
 .fastdelivery{ 
     position: absolute;
@@ -454,7 +462,7 @@ width: 100%;
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-height: 50vh;
+  height: 50vh;
 display: flex;
 flex-direction: column;
 padding-left: 20px;
@@ -538,6 +546,10 @@ font-size: 12px;
     width: 80%;
     margin-inline: auto;
   margin-block: 50px;
+      align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
 /* background: #eb8079; */
 }
 
@@ -554,6 +566,7 @@ object-fit: cover;
 position: relative;
 padding-top: 30px;
 margin-top: 50px;
+/* flex-shrink: 5; */
 }
 .ringone{
     width: 80%;
@@ -584,12 +597,12 @@ padding: 50px;
 }
 
 @media (max-width: 480px) {
-.aboutus{
+/* .aboutus{
 flex-direction: column;
 width: 100%;
-}
+} */
 .rounding{
-width: 90%;
+width: 80%;
 margin-inline: auto;
 }
 .aboutme{
@@ -714,9 +727,9 @@ padding-block: 20px;
 padding-inline: 10px;
 transition: 0.5s;
 }
-.subflex:hover{
+/* .subflex:hover{
     transform: rotateX(180deg);
-}
+} */
 @media (max-width: 480px) {
 .fourthsection{
   width: 100%;
@@ -756,16 +769,17 @@ margin-inline: auto;
 
 }
 
-.timingpurple{
+ .timingpurple{
     display: flex;
-    gap:10px;
+    gap:5px;
     background: purple;
     border-radius: 10px;
     margin-top: 20px;
-    width: 90%;
-    margin-inline: auto;
-    padding: 10px;
-}
+     width: 90%; 
+     margin-inline: 5%;
+    padding-block: 10px;
+    padding-left: 5px;
+}  
 .purpose{
     color: #fff;
     font-size: 10px;
@@ -862,17 +876,27 @@ font-weight: 700;
     border: 2px solid #fff;
     width: 80%;
     height: 90%;
-    margin-inline: auto;
-    margin-block: 10%;
+    /* margin-inline: auto;
+    margin-block: auto; */
+    margin: 15px auto;
 border-radius: 10px;
 }
 @media (max-width:480px) {
     .fifthsection{
         width: 100%;
+        flex-direction: column;
+        height: auto;
     }
-    /* .secondtimepurple span{
-font-size: 13px;
-} */
+    .fifthbg, .fifthbg2{
+        background-size: cover;
+    width: 60%;
+    margin-inline: 20%;
+padding-bottom: 10px;
+    }
+    .fifthtimebg{
+        width: 80%;
+        margin-inline: auto;
+    }
 }
 .secondtimepurple{
     display: flex;
@@ -931,6 +955,7 @@ margin-top: 40px;
 }
 .dealdiv h1{
     font-weight: 800;
+    font-size: 20px;
 
 }
 .dealdiv span{
@@ -965,7 +990,9 @@ gap: 20px;
     width: 90%;
     flex-direction: column;
     }
-
+.dealdiv h1{
+font-size: 13px;
+}
 }
 
 
@@ -989,12 +1016,16 @@ font-weight: 700;
 .reviewhouse{
     display: flex;
     gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 .review{
     background: #eed1cf;
-box-shadow: 5px 5px 10px rgb(241, 166, 166);    border-radius: 20px;
+box-shadow: 5px 5px 10px rgb(241, 166, 166);  
+  border-radius: 20px;
     padding: 20px;
-    width: 50%;
+    width: 40%;
 }
 .staricon5{
     color: yellow;
@@ -1044,9 +1075,9 @@ font-size: 13px;
     margin-top: 10px;
 
 }
-.reviewhouse{
+/* .reviewhouse{
     flex-direction: column;
-}
+} */
 }
 .buttongrp{
     display: flex;

@@ -7,6 +7,7 @@
 }
 body{
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .purple{
@@ -123,9 +124,6 @@ display: block;
 margin-top: 5px;
 margin-inline: 10px;
   cursor: pointer;
-  /* position: relative;
-  left:40px; */
-
  }
 ul{
     display: none;
@@ -226,20 +224,15 @@ border-radius: 20px;
 
 @media (max-width: 480px) {
 .firstSection{
-                display: flex;
         flex-direction: column;
-        width: 100%;
-
-        /* padding-left: 10px; */
+        width: 98%;
     }
 .forwriteup{
 width: 60%;
 text-align: start;
 height: 50vh;
- margin-left: 10px;
- padding-left: 0;
-
-/* background: red; */
+ /* margin-left: 10px; */
+ padding-left: 1%;
 }
 .trusteddiv{
 width: 90%;
@@ -597,10 +590,6 @@ padding: 50px;
 }
 
 @media (max-width: 480px) {
-/* .aboutus{
-flex-direction: column;
-width: 100%;
-} */
 .rounding{
 width: 80%;
 margin-inline: auto;
@@ -615,9 +604,7 @@ margin-inline: auto;
     font-size: 16px;
     width: 80%;
 }
-/* .purplebox {
 
-} */
 }
 
 .aboutme{
@@ -641,7 +628,7 @@ margin-inline: auto;
 .purplebox {
     display: flex;
     background: purple;
-    padding-inline: 15px;
+    padding-left: 15px;
     border-radius: 20px;
     padding-top: 15px;
     width: 90%;
@@ -656,6 +643,9 @@ margin-inline: auto;
 }
 .categories{
     padding-inline: 10px;
+}
+.categories span{
+    color: #fff;
 }
 .jenny{
 font-family: "Dancing Script", cursive;
@@ -702,8 +692,6 @@ margin-block: 50px;
     padding-top: 10px;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
-
-
 }
 .columnflex{
     display: flex;
@@ -1075,9 +1063,9 @@ font-size: 13px;
     margin-top: 10px;
 
 }
-/* .reviewhouse{
+.reviewhouse{
     flex-direction: column;
-} */
+}
 }
 .buttongrp{
     display: flex;

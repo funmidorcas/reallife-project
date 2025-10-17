@@ -74,7 +74,8 @@ const nextButtons = document.querySelectorAll(".nextbutton");
 // Highlight clicked button
 nextButtons.forEach(btn => {
   btn.addEventListener("click", () => {
-    btn.style.background = "yellow";
+    btn.style.background = "black";
+    
   });
 });
 

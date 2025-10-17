@@ -13,7 +13,8 @@ body{
   height: 100%;
   position: relative;
   overflow: hidden;
-        background-color: #0D0D0D;
+        /* background-color: #0D0D0D; */
+  background: radial-gradient(circle at 50% 50%, #222222, #010101);
 
 }
 

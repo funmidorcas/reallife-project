@@ -2,11 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* outline: 1px solid blue; */
 
 }
 body{
   font-family: "Inter", sans-serif;
+      overflow-x: hidden;
+
 }
+html{
+    overflow-x: hidden;
+  
+}
+
 
 .hero {
   color: #fff;
@@ -31,7 +39,6 @@ body{
     z-index: 10;
     top: 0;
     bottom:10;
-
 
 }
 .nav-ul{
@@ -173,7 +180,8 @@ justify-content: space-between;
       justify-content: center; 
       margin-top: 100px;
       margin-bottom: 10px;
-
+ width: 80%;
+ margin-inline: auto;
     }
     .butt{
         border:1px solid coral;

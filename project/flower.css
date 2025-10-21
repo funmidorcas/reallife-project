@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 body{
   font-family: "Inter", sans-serif;
@@ -230,7 +230,7 @@ border-radius: 20px;
 @media (max-width: 480px) {
 .firstSection{
         flex-direction: column;
-        width: 98%;
+        width: 100%;
     }
 .forwriteup{
 width: 60%;

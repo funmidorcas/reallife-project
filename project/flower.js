@@ -17,6 +17,63 @@ open.style.display = "block"
 
 })
 
+let hour = document.querySelectorAll(".hour")
+let minute = document.querySelectorAll(".minute")
+let second = document.querySelectorAll(".second")
+let day = document.querySelectorAll(".day")
+
+// function updateday() {
+//   const date = new Date();
+//   const dayNames = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+//   const dayNow = dayNames[date.getDay()]; // convert number to name
+
+//   day.forEach(function(e) {
+//     e.textContent = dayNow;
+//   });
+// }    
+ // or another tutor style
+function updateday() {
+  const date = new Date();
+  const daynow = date.toLocaleDateString("en-US", {
+    weekday: "short"
+  });
+day.forEach(function(e) {
+     e.textContent = daynow;
+  });
+}     
+updateday();
+
+function updateHour() {
+  const date = new Date();
+  let hourNow = date.getHours().toString().padStart(2, "0");
+
+  hour.forEach(function(e) {
+    e.textContent = hourNow;
+  });
+}
+updateHour();
+
+function updatemin() {
+  const date = new Date();
+  let minNow = date.getMinutes().toString().padStart(2, "0");
+
+  minute.forEach(function(e) {
+    e.textContent = minNow;
+  });
+}
+updatemin();
+
+function updatesec() {
+  const date = new Date();
+  let secNow = date.getSeconds().toString().padStart(2, "0");
+
+  second.forEach(function(e) {
+    e.textContent = secNow;
+  });
+}
+updatesec();
+setInterval(updatesec, 1000)
+
 // let reviewtwo= document.getElementById("review2")
 // let reviewthree= document.getElementById("review3")
 // let reviewfour= document.getElementById("review4")

@@ -226,8 +226,9 @@ justify-content: space-between;
 .parr{
   font-size: 0.5rem;
   opacity: 0.4;
-  width: 100px;
+  width: 60%;
   justify-self: center;
+      text-shadow: 2px 2px 2px rgb(201, 14, 14);
 
 }
 

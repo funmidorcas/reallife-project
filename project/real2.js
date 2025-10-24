@@ -82,6 +82,11 @@ document.querySelector('.view').addEventListener('click', function () {
 //   });
 // });
 
+ let input = document.querySelectorAll(".input")
+  input.forEach(function(e) {
+    e.textContent =  e.style.color = "coral" 
+  });
+
 
 });
 

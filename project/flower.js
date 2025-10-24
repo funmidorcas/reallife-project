@@ -32,6 +32,7 @@ let day = document.querySelectorAll(".day")
 //   });
 // }    
  // or another tutor style
+ function nowtime(){
 function updateday() {
   const date = new Date();
   const daynow = date.toLocaleDateString("en-US", {
@@ -41,7 +42,7 @@ day.forEach(function(e) {
      e.textContent = daynow;
   });
 }     
-updateday();
+// updateday();
 
 function updateHour() {
   const date = new Date();
@@ -51,7 +52,7 @@ function updateHour() {
     e.textContent = hourNow;
   });
 }
-updateHour();
+//updateHour();
 
 function updatemin() {
   const date = new Date();
@@ -61,7 +62,7 @@ function updatemin() {
     e.textContent = minNow;
   });
 }
-updatemin();
+// updatemin();
 
 function updatesec() {
   const date = new Date();
@@ -71,8 +72,86 @@ function updatesec() {
     e.textContent = secNow;
   });
 }
-updatesec();
+// updatesec();
 setInterval(updatesec, 1000)
+return {updateday, updateHour, updatemin, updatesec}
+  }  // nowtime close
+ const game = nowtime()
+ game.updateday()
+ game.updateHour()
+ game.updatemin()
+ game.updatesec
+
+ 
+// function ahead(){
+// function updateday() {
+//   const date = new Date("wednessday");
+//   const daynow = date.toLocaleDateString("en-US", {
+//     weekday: "short"
+//   });
+// day.forEach(function(e) {
+//      e.textContent = daynow;
+//   });
+// }     
+// // updateday();
+
+// function updateHour() {
+//   const date = new Date(16);
+//   let hourNow = date.getHours().toString().padStart(2, "0");
+
+//   hour.forEach(function(e) {
+//     e.textContent = hourNow;
+//   });
+// }
+// // updateHour();
+
+// function updatemin() {
+//   const date = new Date(5);
+//   let minNow = date.getMinutes().toString().padStart(2, "0");
+
+//   minute.forEach(function(e) {
+//     e.textContent = minNow;
+//   });
+// }
+// // updatemin();
+
+// function updatesec() {
+//   const date = new Date(4);
+//   let secNow = date.getSeconds().toString().padStart(2, "0");
+
+//   second.forEach(function(e) {
+//     e.textContent = secNow;
+//   });
+// }
+// // updatesec();
+// setInterval(updatesec, 1000)
+// return {updateday, updateHour, updatemin, updatesec}
+
+//   }  //ahead close
+
+// const aheadtime = ahead()
+// const gaming = nowtime() - ahead()
+//  gaming.updateday()
+//  gaming.updateHour()
+//  gaming.updatemin()
+//  gaming.updatesec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let reviewtwo= document.getElementById("review2")
 // let reviewthree= document.getElementById("review3")
@@ -85,9 +164,6 @@ setInterval(updatesec, 1000)
 // let buttonthree =document.querySelector(".button3")
 // let buttonfour =document.querySelector(".button4")
 // let buttonfive =document.querySelector(".button5")
-
-
-
 
 // nextbutton.forEach(function(button) {
 //   button.addEventListener("click", function() {

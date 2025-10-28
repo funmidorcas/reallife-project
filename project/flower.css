@@ -52,7 +52,7 @@ transition: 0.5s;
 .four:hover{
 filter: grayscale(100);
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 .purple{
  font-size: 5px;
  width: 100%;
@@ -90,6 +90,11 @@ gap: 20px;
 transition: 0.5s;
 position: relative;
 inset-block: 0;
+    align-items: start;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: start;
+
 }
 nav ul li::after{
     content: '';
@@ -118,9 +123,10 @@ width: 100%;
     display: none;
     visibility: hidden;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 nav{
-        overflow: hidden;
+        width: 100%;
+        padding-inline: 10px;
 }
     .menu{
 visibility: visible;
@@ -227,7 +233,7 @@ border-radius: 20px;
     color: #fff;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 .firstSection{
         flex-direction: column;
         width: 100%;
@@ -511,7 +517,7 @@ font-size: 12px;
     padding: 8px;
     border-radius: 20px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .secondsection{
     flex-direction: column;
     gap: 50px;
@@ -874,7 +880,7 @@ font-weight: 700;
     margin: 15px auto;
 border-radius: 10px;
 }
-@media (max-width:480px) {
+@media (max-width:768px) {
     .fifthsection{
         width: 100%;
         flex-direction: column;
@@ -973,7 +979,7 @@ font-size: 13px;
 gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
-@media (max-width:480px) {
+@media (max-width:768px) {
     .secondbighouse{
     overflow-x: auto;
         margin-top: 20px;
@@ -1060,7 +1066,7 @@ color: white;
 font-size: 13px;
 }
 
-@media (max-width:480px) {
+@media (max-width:768px) {
 .review{
     width: 80%;
 }

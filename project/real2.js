@@ -84,7 +84,14 @@ document.querySelector('.view').addEventListener('click', function () {
 
  let input = document.querySelectorAll(".input")
   input.forEach(function(e) {
+    e.addEventListener("input", event =>{
     e.textContent =  e.style.color = "coral" 
+    })
+  });
+  input.forEach(function(e) {
+    e.addEventListener("mouseout", event =>{
+    e.textContent =  e.style.color = "black" 
+    })
   });
 
 

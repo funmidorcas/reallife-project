@@ -65,22 +65,20 @@ document.querySelector('.view').addEventListener('click', function () {
   });
 
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   const progressBars = document.querySelectorAll('.progress');
-//   progressBars.forEach(bar => {
-//     const percent = bar.getAttribute('data-percent');
-//     bar.style.width = percent;
-//   });
+const sections = document.querySelectorAll(".progresss");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("animate");
+      void entry.target.offsetWidth;
+      entry.target.classList.add("animate");
 
-// });
+    }
+  });
+}, { threshold: 0.5 });
 
+sections.forEach(section => observer.observe(section));
 
-//     document.getElementById('resetBtn').addEventListener('click', () => {
-//   const progressBars = document.querySelectorAll('.progress');
-//   progressBars.forEach(bar => {
-//     bar.style.width = '0%';
-//   });
-// });
 
  let input = document.querySelectorAll(".input")
   input.forEach(function(e) {

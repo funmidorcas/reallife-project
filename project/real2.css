@@ -679,14 +679,24 @@ display: flex;
 .progresss {
   height: 100%;
   background: #00ff99;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
 }
 .percents {
   font-size: 14px;
   text-align: right;
   color: #ccc;
 } 
-
+.animate {
+  animation: flow 1s ease-out 1 forwards;
+}
+@keyframes flow {
+  50%{
+    transform: scaleX(1.2);
+    }
+    100%{
+      transform: scaleX(1);
+    }
+}
 
 
 @media (max-width: 480px) {

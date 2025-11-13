@@ -3,13 +3,29 @@ document.addEventListener("DOMContentLoaded", function () {
 const links = document.querySelectorAll(".link-item")
   const activeIndex = localStorage.getItem("activeLink")
   if (activeIndex !== null && links[activeIndex]) {
-    links[activeIndex].classList.add("link")
+    links[activeIndex].style.background = "white"
   }
   links.forEach((link, index) => {
     link.addEventListener("click", () => {
+        link.style.background = "white"
       localStorage.setItem("activeLink", index)
     })
   })
+
+// links.forEach(link =>{
+//     link.addEventListener("click", ()=>{
+//         link.style.background = "white"
+//     })
+// })
+
+
+
+
+
+
+
+
+
 
 const lock = document.querySelector(".icon4");
 const open = document.querySelector(".icon3");

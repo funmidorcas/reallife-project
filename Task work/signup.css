@@ -1,0 +1,43 @@
+.welcome{
+    width:40%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin-inline: auto;
+margin-top: 100px;
+padding-top: 30px;
+border-radius: 10px;
+}
+.first-div{
+    line-height: 40px;
+text-align: center;
+margin-bottom: 20px;
+}
+.logo{
+    justify-self: center;
+align-items: center;
+}
+@media (max-width: 768px) {
+.welcome{
+        width:90%;
+}    
+}
+
+/* hr */
+.login-signup{
+display: flex;
+justify-content: space-between;
+background-color: rgb(239, 243, 243);
+width: 80%;
+margin-inline: auto;
+border-radius: 10px;
+padding-block: 5px;
+margin-bottom: 40px;
+}
+.link-item{
+border-radius: 5px;
+padding:2px;
+width: 40%;
+text-align: center;
+margin-inline: 10px;
+}
+
+/* hr */

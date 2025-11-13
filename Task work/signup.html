@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="root.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>hello</h1>
+
+  <section class="welcome">
+ <div class=" first-div">
+    <img class="logo" src="./asset/tasklogo.jpg" alt="logo">
+    <h1>Join TaskMaster</h1>
+    <p>Create an account to boost your productivity</p>
+ </div>
+
+<!-- <hr> -->
+<div class="login-signup">
+    <a class="link-item" href="./login.html">Login</a>
+    <a class="link-item" href="./signup.html">Sign Up</a>
+</div>
+
+<form action="">
+    
+</form>
+
+
+
+</section>
+<script src="signup.js"></script>
+    <script>
+const links = document.querySelectorAll(".link-item")
+  const activeIndex = localStorage.getItem("activeLink")
+  if (activeIndex !== null && links[activeIndex]) {
+    links[activeIndex].style.background = "white"
+  }
+  links.forEach((link, index) => {
+    link.addEventListener("click", () => {
+        link.style.background = "white"
+      localStorage.setItem("activeLink", index)
+    })
+  })
+
+    </script>
+
 </body>
 </html>

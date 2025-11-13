@@ -1,3 +1,26 @@
+.animation{
+    display: flex;
+    position: relative
+}
+
+.first-room{
+    position: absolute
+
+}
+.second-room{
+    position: absolute
+
+}
+
+
+
+
+
+
+
+
+
+
 .welcome{
     width:40%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -24,18 +47,20 @@ align-items: center;
 /* hr */
 .login-signup{
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 background-color: rgb(239, 243, 243);
 width: 80%;
 margin-inline: auto;
 border-radius: 10px;
-padding-block: 6px;
+padding-block: 5px;
 margin-bottom: 40px;
 }
-.link{
-background-color: #fff;
-border-radius: 10px;
-padding: 5px 70px;
+.link-item{
+border-radius: 5px;
+padding:2px;
+width: 40%;
+text-align: center;
+margin-inline: 10px;
 }
 
 /* hr */
@@ -53,7 +78,7 @@ label{
 }
 input{
 border: 1px solid rgb(175, 168, 168);
-    width: 70%;
+    width: 80%;
 padding: 10px 40px;
 border-radius: 10px;
 margin-bottom: 20px;
@@ -62,15 +87,17 @@ background-color: #fff;
 .new-input{
     border: 2px solid rgb(116, 189, 218); 
 box-shadow: rgb(50, 170, 218) 0px 3px 8px;
-    transition: 0.5s
+    transition: 0.5s;
 }
 .icon{
     opacity: 0.5;
+    font-size: 20px;
 }
 .icn{
     position: absolute;
     top:21%;
     left:10px;
+    font-size: 20px;
 }
 .icn2{
         position: absolute;
@@ -78,7 +105,7 @@ box-shadow: rgb(50, 170, 218) 0px 3px 8px;
     left:10px;
         opacity: 0.5;
 cursor: pointer;
-
+font-size: 20px;
 }
 .icon3{
     color:rgb(99, 99, 173);
@@ -131,4 +158,13 @@ footer{
     text-align: center;
     margin-block: 30px;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap:5px
+}
+.line{
+    width: 2px;
+    background: gray;
+    height: 15px;
+    margin-top: 3px;
 }

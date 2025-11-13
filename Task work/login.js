@@ -30,9 +30,11 @@ open.addEventListener("click", function() {
 
 email.addEventListener("click", ()=>{
     email.classList.add("new-input")
+    password.classList.remove("new-input")
 })
 password.addEventListener("click", ()=>{
     password.classList.add("new-input")
+    email.classList.remove("new-input")
 })
 
 const form = document.getElementById("form")

@@ -1,0 +1,38 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a { text-decoration: none;
+cursor: pointer;
+color: black; 
+}
+  
+  
+  button,
+  input {
+    /* background: none;
+    border: none; */
+    font: inherit;
+  }
+  
+  button { cursor: pointer; }
+ html {
+    background: #fff;
+    /* font-size: 10px; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    color: black;
+  }
+  .logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  body{
+  font-family: "Inter", sans-serif;
+ transition: 0.5s;
+}

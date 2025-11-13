@@ -1,0 +1,134 @@
+.welcome{
+    width:40%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin-inline: auto;
+margin-top: 100px;
+padding-top: 30px;
+border-radius: 10px;
+}
+.first-div{
+    line-height: 40px;
+text-align: center;
+margin-bottom: 20px;
+}
+.logo{
+    justify-self: center;
+align-items: center;
+}
+@media (max-width: 768px) {
+.welcome{
+        width:90%;
+}    
+}
+
+/* hr */
+.login-signup{
+display: flex;
+justify-content: space-around;
+background-color: rgb(239, 243, 243);
+width: 80%;
+margin-inline: auto;
+border-radius: 10px;
+padding-block: 6px;
+margin-bottom: 40px;
+}
+.link{
+background-color: #fff;
+border-radius: 10px;
+padding: 5px 70px;
+}
+
+/* hr */
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 30px;
+    gap:10px;
+    position: relative;
+}
+label{
+    font-size: 15px;
+}
+input{
+border: 1px solid rgb(175, 168, 168);
+    width: 70%;
+padding: 10px 40px;
+border-radius: 10px;
+margin-bottom: 20px;
+background-color: #fff;
+}
+.new-input{
+    border: 2px solid rgb(116, 189, 218); 
+box-shadow: rgb(50, 170, 218) 0px 3px 8px;
+    transition: 0.5s
+}
+.icon{
+    opacity: 0.5;
+}
+.icn{
+    position: absolute;
+    top:21%;
+    left:10px;
+}
+.icn2{
+        position: absolute;
+    bottom: 17%;
+    left:10px;
+        opacity: 0.5;
+cursor: pointer;
+
+}
+.icon3{
+    color:rgb(99, 99, 173);
+    display: none;
+ opacity: 0.5;
+cursor: pointer;
+
+}
+
+/* hr */
+.help-next{
+display: flex;
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 30px;
+    gap: 15px;
+ justify-content: space-between;
+}
+.icon-help{
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(230, 227, 227);
+}
+.icon-help, .submit{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.submit{
+    border: none;
+background: linear-gradient(to right, rgb(235, 177, 136), rgb(231, 143, 79), chocolate);
+transition: 0.5s;
+}
+.submit:hover{
+background: linear-gradient(to left, rgb(235, 177, 136), rgb(231, 143, 79), chocolate)
+}
+.agree{
+    text-align: center;
+        font-size: 14px;
+    padding-bottom: 30px;
+    padding-inline: 30px;
+    line-height: 20px;
+}
+.agree a{
+    color: blue;
+}
+
+footer{
+    text-align: center;
+    margin-block: 30px;
+    font-size: 14px;
+}

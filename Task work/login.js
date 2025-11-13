@@ -12,27 +12,13 @@ const links = document.querySelectorAll(".link-item")
     })
   })
 
-// links.forEach(link =>{
-//     link.addEventListener("click", ()=>{
-//         link.style.background = "white"
-//     })
-// })
-
-
-
-
-
-
-
-
-
 
 const lock = document.querySelector(".icon4");
 const open = document.querySelector(".icon3");
 const password = document.querySelector("#password");
 const submit = document.querySelector(".submit")
 const email = document.querySelector("#email")
-
+const fullname = document.querySelector("#fullname")
 lock.addEventListener("click", function() {
   open.style.display = "block";   
    password.type = "text";            
@@ -47,11 +33,20 @@ open.addEventListener("click", function() {
 email.addEventListener("click", ()=>{
     email.classList.add("new-input")
     password.classList.remove("new-input")
+    fullname.classList.remove("new-input")
 })
 password.addEventListener("click", ()=>{
     password.classList.add("new-input")
     email.classList.remove("new-input")
+ fullname.classList.remove("new-input")
+
 })
+fullname.addEventListener("click", ()=>{
+    fullname.classList.add("new-input")
+    password.classList.remove("new-input")
+        email.classList.remove("new-input")
+})
+
 
 const form = document.getElementById("form")
 

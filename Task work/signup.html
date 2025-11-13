@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="root.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,13 +28,43 @@
 </div>
 
 <form action="">
-    
+    <label for="fullname">Full Name*</label>
+    <input type="text" id="fullname" value="John Doe">
+          <i class="fa-solid fa-user icon name-icon"></i>
+
+<label for="email">Email*</label>
+<input type="email" id="email" value="ade@gmail.com">
+      <i class="fa-solid fa-envelope icon email-icon"></i>
+
+<label for="password">Password*</label>
+<input type="password" id="password" value="123456">
+<p class="small">Password must be at least 6 characters long</p>
+      <i class="fa-solid fa-lock icon4 lock-icon"></i>
+     <i class="fa-solid fa-unlock icon3 lock-icon"></i>
+
+     <div class="help-next">
+  <div class="icon-help">
+          <i class="fa-solid fa-lock icon icn-help"></i>
+  <a href="" class="help">Help?</a>
+  </div>
+  <button class="submit create">Create Account</button>
+</div>
 </form>
+
+    <p class="agree">By continuing, you agree to our <a href="">Terms of Service </a>& <a href="">Privacy Policy</a></p>
+  </section>
+
+    <footer>
+      <i class="fa-regular fa-copyright" style="margin-top: 3px;"></i>
+      <p> 2025, Funmitedev <div class="line"></div>
+         Made for University Students</p>
+    </footer>
+
 
 
 
 </section>
-<script src="signup.js"></script>
+<script src="login.js"></script>
     <script>
 const links = document.querySelectorAll(".link-item")
   const activeIndex = localStorage.getItem("activeLink")

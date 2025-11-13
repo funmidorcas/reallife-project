@@ -1,0 +1,53 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+  font-family: "Inter", sans-serif;
+ transition: 0.5s;
+}
+
+.sidebar{
+position: fixed;
+top:0;
+left: 0;
+width: 260px;
+height: 100vh;
+background: #fff;
+transition: all 0.4s ease;
+outline: 2px solid black;
+}
+/* .sidebar.collapsed{
+    width: 85px;
+} */
+.header-head{
+       display: flex;
+       padding-bottom: 20px;
+}
+.header{
+    margin-top: 15px;
+       display: flex;
+       gap:70px;
+      justify-content: space-between;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.open{
+    /* display: none; */
+        color: red;
+        margin-top: 5px;
+
+}
+.close{
+    display: none;
+    color: red;
+}
+hr{
+    opacity: 0.5;
+}
+/* hr */
+

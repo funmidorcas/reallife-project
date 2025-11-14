@@ -1,33 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="aside.css">
-    <!-- <link rel="stylesheet" href="root.css"> -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side bar Page</title>
+  <link href="../src/output.css" rel="stylesheet">
+<link rel="stylesheet" href="aside.css">
+<!-- <link rel="stylesheet" href="aside.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <aside class="sidebar">
-      <header class="header-head">
-            <img src="./asset/tasklogo.jpg" alt="">
-         <div class="header"> 
-               <h3 class="taskmaster">TaskMaster</h3>
-              <i class="fa-solid fa-bars open"></i>
-      <i class="fa-solid fa-close close"></i>
-          </div>
-        </header>
-<hr>
-        <section>
-            <h3></h3>
+<body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
+    <button class="sidebar-menu-button">
+        <i class="fa-solid fa-bars icon menu-bar"></i>
+</button>
 
+  <aside class="sidebar">
+  <header class="sidebar-header">
+    <a href="#" class="header-logo">
+      <img src="./asset/tasklogo.jpg" class="image" alt="" >
+    </a>
+               <h1 class="taskmaster">TaskMaster</h1>
+    <button class="sidebar-toggler">
+<i class="fa-solid fa-close top-close"></i>   
+<i class="fa-solid fa-bars new-menu"></i>
+</button>
+  </header>
+
+<hr>
+
+
+        <section class="guest">
+     <!-- <img class="guest-img" src="./asset/tasklogo.jpg" alt="" style="width:50px; height:50px"> -->
+      <h1 class="guest-img">F</h1>
+ <div class="guest-div">
+ <h3 class="guest-h3">Funmi</h3>
+ <a class="guest-a" href="">funmi@gmail.com</a>
+ </div>
         </section>
-  
-        
-    </aside>
+            <hr> 
+
+
+
+<nav class="sidebar-nav">
+  <ul class="nav-list primary-nav">
+    <li class="nav-item">
+      <a href="dashboard.html" class="nav-link">
+        <span class="fa-solid fa-table-columns"></span>
+        <span class="nav-label">Dashboard</span>
+      </a>
+      <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="dashbord.html">Dashboard</a>
+  </li>
+</ul>
+</li>
+
+    
+    <li class="nav-item">
+      <a href="task.html" class="nav-link">
+        <span class="fa-solid fa-pen-to-square"></span>
+        <span class="nav-label">Task</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="task.html">Task</a>
+  </li>
+</ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="community.html" class="nav-link">
+        <span class="fa-solid fa-users icon"></span>
+        <span class="nav-label">Community</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="community.html">Community</a>
+  </li>
+</ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="expenses.html" class="nav-link">
+        <span class="fa-solid fa-dollar-sign"></span>
+        <span class="nav-label">Expenses</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="expenses.html">Expenses</a>
+  </li>
+</ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="notes.html" class="nav-link">
+        <span class="fa-regular fa-clipboard"></span>
+        <span class="nav-label">Notes</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="notes.html">Notes</a>
+  </li>
+</ul>
+    </li>
+
+        <li class="nav-item">
+      <a href="setting.html" class="nav-link">
+        <span class="fa-solid fa-sun icon"></span>
+        <span class="nav-label">Settings</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="setting.html">Settings</a>
+  </li>
+</ul>
+    </li>
+  </ul>
+
+
+
+  <ul class="nav-list secondary-nav">
+    <li class="nav-item">
+      <a href="login.html" class="nav-link">
+                <span class="fa-solid fa-right-to-bracket"></span>
+        <span class="nav-label">Logout</span>
+
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="login.html">Logout</a>
+  </li>
+</ul>
+
+    </li>
+  </ul>
+</nav>
+
+</aside>
+<script src="aside.js"></script>
+
 </body>
 </html>

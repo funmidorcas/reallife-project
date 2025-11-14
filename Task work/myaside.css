@@ -1,0 +1,131 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+  font-family: "Inter", sans-serif;
+ transition: 0.5s;
+}
+
+.sidebar{
+    display: none;
+position: fixed;
+top:0;
+left: 0;
+max-width: 260px;
+height: 100vh;
+background: #fff;
+transition: all 0.5s ease;
+z-index: 10;
+}
+.header-head{
+       display: flex;
+       padding: 20px 10px;
+       gap:10px;
+}
+.header{
+    margin-top: 15px;
+       display: flex;
+       gap:60px;
+      justify-content: space-between;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.open{
+    display: block;
+        color: gray;
+        margin-top: 5px;
+transition: 0.5s;
+}
+.close{
+    display: block;
+    color: gray;
+    transition: 0.5s;
+}
+hr{
+    opacity: 0.5;
+}
+/* hr */
+
+.guest{
+    display: flex;
+       padding: 20px 10px;
+       gap:10px;
+}
+.guest-div{
+    margin-top: 5px;
+    align-items: start;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: start;
+ /* overflow-x: auto; */
+}
+.guest-h3{
+    font-size: 12px;
+}
+.guest-a{
+    font-size: 10px;
+}
+.guest-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* hr */
+.list{
+           padding: 20px 10px;
+       gap:10px;
+       color: gray; 
+ font-size: 13px;
+}
+.icon{
+    font-size: 10px;
+}
+.big{
+    font-size: 16px;
+}
+.list-div{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    transition: 0.5s;
+}
+.list-div:hover, .last-div:hover{
+    border: none;
+    border-radius: 10px;
+    background-color: darkcyan;
+    color: #fff;
+}
+.list-div a{
+    color:gray;
+}
+.list-div a:hover, .last-div a:hover{
+        color: #fff;
+}
+  a { text-decoration: none;
+cursor: pointer;
+    color:gray;
+}
+
+.last-div{
+    position: relative;
+    top: 80px;
+    padding-inline: 20px;
+    padding-block: 20px 10px;
+    display: flex;
+    gap: 10px;
+    color: red; 
+ font-size: 13px;
+transition: 0.5s;
+}
+.last-div a{
+    color: red;
+    margin-top: -3px;
+}
+/* .last-div i{
+    font-size: 20px;
+} */

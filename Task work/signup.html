@@ -64,21 +64,7 @@
 
 
 </section>
-<script src="login.js"></script>
-    <script>
-const links = document.querySelectorAll(".link-item")
-  const activeIndex = localStorage.getItem("activeLink")
-  if (activeIndex !== null && links[activeIndex]) {
-    links[activeIndex].style.background = "white"
-  }
-  links.forEach((link, index) => {
-    link.addEventListener("click", () => {
-        link.style.background = "white"
-      localStorage.setItem("activeLink", index)
-    })
-  })
-
-    </script>
+<script src="signup.js"></script>
 
 </body>
 </html>

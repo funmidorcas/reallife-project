@@ -41,17 +41,21 @@ password.addEventListener("click", ()=>{
  fullname.classList.remove("new-input")
 
 })
-
-
-// submit.addEventListener("click", ()=>{
-//    sessionStorage.setItem("email", JSON.stringify(email.value)); 
-//   //  sessionStorage.setItem("fullname", JSON.stringify(fullname.value)); 
-//      window.location.href = "aside.html";
-// })
+fullname.addEventListener("click", ()=>{
+    fullname.classList.add("new-input")
+    password.classList.remove("new-input")
+        email.classList.remove("new-input")
+})
 
 
 // const form = document.getElementById("form")
-
-
-
-});
+// let imageletter = document.querySelector(".guest-img")
+submit.addEventListener("click", () => {
+    let fullNameValue = fullname.value; 
+    let emailValue = email.value;
+    let imageLetter = fullNameValue.charAt(0).toUpperCase();
+    sessionStorage.setItem("fullname", JSON.stringify(fullNameValue));
+    sessionStorage.setItem("imageletter", JSON.stringify(imageLetter));
+    sessionStorage.setItem("email", JSON.stringify(emailValue));
+    window.location.href = "aside.html";
+});})

@@ -24,7 +24,7 @@ transition: all 0.5s ease;
 display: flex;
 position: relative;
 align-items: center;
-padding: 25px 20px;
+padding: 15px;
 gap:10px;
 }
 .sidebar-header .header-logo img{
@@ -46,6 +46,7 @@ hr{
     border: none;
     align-items: center;
     justify-content: center;
+    align-items: center;
     border-radius: 8px;
     transition: 0.5s ease;
 }
@@ -90,7 +91,7 @@ hr{
 } 
  .guest{
     display: flex;
-padding: 25px 20px;
+padding: 15px;
        gap:10px;
 }
 .guest-div{
@@ -131,19 +132,9 @@ transform: translateY(15px);
 transition: 0.5s ease;
 }
  .sidebar-nav .primary-nav{
-         height:calc(100vh - 245px); 
-    /* overflow-y: auto;
-    padding-bottom:50px;
-    scrollbar-width: thin;
-    scrollbar-color:transparent transparent; */
+         /* height:calc(100vh - 245px);  */
+         padding-bottom: 30px;
 } 
-/* .sidebar-nav .primary-nav:hover{
-    scrollbar-color:#eef2ff transparent;
-} */
-/* .sidebar.collapsed .sidebar-nav .primary-nav{
-    overflow-y: unset;
-    transform: translateY(65px);
-} */
 
 .sidebar-nav .nav-item .nav-link{
     color: gray;
@@ -171,10 +162,16 @@ transition: 0.5s ease;
 }
 .sidebar-nav .secondary-nav{
     position: relative;
-    bottom: 8px;
     width: 100%;
+    top: 10vh;
     /* background: #020718; */
 }
+ @media (max-width: 480px){
+ .sidebar-nav .secondary-nav{
+    bottom: 10px;
+    top:0px;
+} 
+} 
 
 /* hr */   
 
@@ -183,16 +180,6 @@ transition: 0.5s ease;
     position: relative;
 
 }
-/* .sidebar-nav .dropdown-container .dropdown-icon{
-    margin:0 -4px 0 auto;
-    transition: transform 0.4s ease, opacity 0.3s 0.2s ease;
-}
-.sidebar.collapsed .dropdown-container .dropdown-icon{
-    transition: opacity 0.3s 0s ease; 
-}
-.sidebar-nav .dropdown-container.open .dropdown-icon{
- transform: rotate(180deg);
-} */
 .sidebar-nav .dropdown-menu {
     height: 0;
     overflow-y:hidden;
@@ -213,10 +200,6 @@ transition: 0.5s ease;
     border-radius: 0 10px 10px 0;
     transition: 0s;
 }
-/* .sidebar.collapsed .dropdown-menu:has(.dropdown-link){
-    padding: 7px 10px 7px 24px;
-
-} */
 .sidebar.collapsed .nav-item:hover .dropdown-menu{
  opacity: 1;
  pointer-events: auto;

@@ -6,13 +6,22 @@
 
 body{
   font-family: "Inter", sans-serif;
-      background-color: #e5e8f3;
+      background-color: #f3f4f8;
 }
-@media (min-width: 769px){
+@media (min-width: 768px){
 main{
       width: 88%;
     margin-left: 10%;
 }
+.header-click{
+ width: 75%;
+ position: relative;
+ left: 10%;
+ right: 5%;
+ flex-wrap: wrap;
+    transition:  0.5s ease;
+}
+
 }
 
 @media (max-width: 768px){
@@ -73,9 +82,9 @@ margin-bottom: 40px;
 .box-section{
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   align-items: start;
-  align-content: start;
+  align-content: start; */
 }
 .box-div{
   width: 23%;
@@ -110,7 +119,7 @@ border: 1px solid rgb(219, 202, 202);
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background-color: blue;
+  background-color: rgb(96, 96, 226);
   align-content: center;
   text-align: center;
 }
@@ -136,20 +145,7 @@ font-weight: 800;
   margin-top: 30px;
   height: 65vh;
 }
-@media (max-width: 768px){
-.section-last{
-  flex-direction: column;
-  width: 100%;
-}
-/* .last-first-last{
-  width: 100%;
-  background-color: red;
-} */
-.last-last{
-  width: 100%;
-}
-}
-.last-first-div{
+.last-first{
   width: 50%;
   background-color: #fff;
   border-radius: 10px;
@@ -170,10 +166,6 @@ top: 30%;
   text-align: center;
   opacity: 0.5;
 }
-
-
-
-
 
 .last-last{
   width: 50%;
@@ -211,4 +203,16 @@ transition: 0.5s;
 }
 .create-newh3 p{
 opacity: 0.5;
+}
+@media (max-width: 768px){
+.section-last{
+  flex-direction: column;
+  width: 100%;
+}
+.last-first{
+  width: 100%;
+}
+.last-last{
+  width: 100%;
+}
 }

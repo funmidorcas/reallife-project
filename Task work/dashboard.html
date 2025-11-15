@@ -76,7 +76,7 @@
 <!-- <hr> -->
  <section class="section-last">
 
-<div class="last-first-div">
+<div class="last-first">
   <div class="recent">
     <i class="fa-regular fa-clock"></i>
   <p>Recent Tasks</p>
@@ -117,45 +117,20 @@
     </div>
   
  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </main>
-
-
-
-
 
 <script>
 fetch("aside.html")
   .then(res => res.text())
   .then(data => {
-    document.getElementById("aside-container").innerHTML = data;
+    document.getElementById("aside-container").innerHTML = data
 
-    // load aside.js after HTML exists
-    const script = document.createElement("script");
-    script.src = "aside.js";
-    document.body.appendChild(script);
-  });
+    const script = document.createElement("script")
+    script.src = "aside.js"
+    document.body.appendChild(script)
+  })
 </script>
+<script src="dashboard.js"></script>
  </body>
   </html>
 

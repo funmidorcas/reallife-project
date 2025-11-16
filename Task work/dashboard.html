@@ -81,6 +81,10 @@
     <i class="fa-regular fa-clock"></i>
   <p>Recent Tasks</p>
   </div>
+  <div>
+    <h1 class="tasks-list"></h1>
+    <p class="textarea-list"></p>
+  </div>
   <div class="center">
       <span class="fa-solid fa-pen-to-square"></span>
     <p>No tasks yet</p>
@@ -94,7 +98,7 @@
       </div>
       <div class="last-last-second">
               <span class="fa-solid fa-pen-to-square icon-box" style="color: rgb(79, 79, 219);"></span>
-<div class="create-newh3"><h3>Create New Task</h3>
+<div class="create-newh3"><h3 class="create-new-task">Create New Task</h3>
 <p>Add a task to your list</p>
 </div>
       </div>
@@ -112,12 +116,29 @@
 <p>Capture your thoughts</p>
 </div>
       </div>
-
-
     </div>
-  
+
  </section>
 </main>
+
+
+<section class="popup-container">
+  <i class="fa-solid fa-close intro-close"></i>   
+
+   <div class="introduction">
+    <h1>Create New Note</h1>
+  <p>Jot down your thoughts and ideas</p></div>
+  <div class="title-form">
+<label for="title-input">Title</label>
+<input type="text" id="title-input" placeholder="Enter note title">
+<label for="content">Content</label>
+<textarea name="content" id="content" placeholder="Write your note here"></textarea>
+  </div>
+  <div class="cancel-createnote">
+    <button type="reset" id="reset">Cancel</button>
+    <button type="submit" id="submit-note"  rows="4">Create Note</button>
+  </div>
+</section>
 
 <script>
 fetch("aside.html")

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+<div id="aside-container"></div>
+<div class="head-title">
+  <img src="./asset/tasklogo.jpg" alt="">
+<h1 class="task-title">TaskMaster</h1>
+</div>
+  </header>
+
+ <!-- <hr> -->
+<main>
+    hello world!
+    <h1>i am Funmi</h1>
+    <p> funmi again</p>
+</main>
+<script>
+    fetch("aside.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("aside-container").innerHTML = data
+
+    const script = document.createElement("script")
+    script.src = "aside.js"
+    document.body.appendChild(script)
+  })
+
+</script>
+<script src="task.js"></script>
+</body>
+</html>

@@ -40,7 +40,7 @@ padding-block: 10px;
 background: #fff;
 top:0px;
 z-index: 10;
-border-bottom: 1px solid rgb(204, 192, 192);
+    border-bottom: 1px solid rgb(156, 151, 151);
 }
 }
 .head-title{
@@ -234,6 +234,9 @@ cursor: pointer;
 }
 
 /* hr */
+/* .popup-fixed{
+position: fixed;
+} */
 .popup-container{
   border: 1px solid black;
   width: 30%;
@@ -275,7 +278,9 @@ font-weight: 800;
   border-radius: 10px;
   font:inherit;
   height: 100px;
-
+}
+.content-label{
+  margin-top: 20px;
 }
 .cancel-createnote{
   display: flex;

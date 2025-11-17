@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="community.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+<div id="aside-container"></div>
+<div class="head-title">
+  <img src="./asset/tasklogo.jpg" alt="">
+<h1 class="task-title">TaskMaster</h1>
+</div>
+  </header>
+
+ <!-- <hr> -->
+<main>
+<div class="board">
+ <span class="fa-solid fa-users"></span>
+ <div class="community">
+    <h1>Community Board</h1>
+    <p>Collaborate with your team</p>
+ </div>
+</div>
+
+<section class="large">
+    <div class="large-first">
+   <div class="large-first-sub">
+            <h1 class="guest-letter" style="margin-top: 10px;
+">F</h1>
+        <input type="text" placeholder="share an update, askfor help, or celebrate a win...(Mention @comsq to get AIA help)">
+   </div>
+   <button type="submit"  class="post">Post</button>
+    </div>
+<!-- hr -->
+    <div class="large-second">
+        <div class="large-second-row">
+         <h1 class="guest-letter">F</h1>
+           <div class="large-second-sub">
+                 <h1>John DOE</h1>
+                 <p>hello</p>
+               </div>
+               </div>
+               <p class="day">1 day ago</p>
+    </div>
+    <div class="large-second">
+        <div class="large-second-row">
+         <h1 class="guest-letter">F</h1>
+           <div class="large-second-sub">
+                 <h1>John DOE</h1>
+                 <p>hello</p>
+               </div>
+               </div>
+               <p class="day">1 day ago</p>
+    </div>
+    <div class="large-second">
+        <div class="large-second-row">
+         <h1 class="guest-letter">F</h1>
+           <div class="large-second-sub">
+                 <h1>John DOE</h1>
+                 <p>hello</p>
+               </div>
+               </div>
+               <p class="day">1 day ago</p>
+    </div>
+    <div class="large-second">
+        <div class="large-second-row">
+         <h1 class="guest-letter">F</h1>
+           <div class="large-second-sub">
+                 <h1>John DOE</h1>
+                 <p>hello</p>
+               </div>
+               </div>
+               <p class="day">1 day ago</p>
+    </div>
+    <div class="large-second">
+        <div class="large-second-row">
+         <h1 class="guest-letter">F</h1>
+           <div class="large-second-sub">
+                 <h1>John DOE</h1>
+                 <p>hello</p>
+               </div>
+               </div>
+               <p class="day">1 day ago</p>
+    </div>
+    <div class="large-second">
+        <div class="large-second-row">
+         <h1 class="guest-letter">F</h1>
+           <div class="large-second-sub">
+                 <h1>John DOE</h1>
+                 <p>hello</p>
+               </div>
+               </div>
+               <p class="day">1 day ago</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<script>
+fetch("aside.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("aside-container").innerHTML = data
+
+    const script = document.createElement("script")
+    script.src = "aside.js"
+    document.body.appendChild(script)
+  })
+</script>
+<script src="community.js"></script>
+</body>
+</html>

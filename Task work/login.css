@@ -1,26 +1,136 @@
 .animation{
     display: flex;
-    position: relative
+    position: relative;
+    justify-content: space-between;
+}
+.box1{
+        width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+ top: 40vh;
+ left: 5%;
+ animation: box1 5s ease 0s infinite normal none;
+}
+@keyframes box1 {
+    0%{
+            border: 3px solid rgb(230, 230, 236);
+    }
+    50%{
+            border: 3px solid rgb(168, 168, 172);
+            transform: translateY(10px);
+    }
+    100%{
+            border: 3px solid rgb(202, 202, 204);
+    }
+}
+.box2{
+        width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+ top: 60vh;
+ left: 8%;
+ animation: box2 5s ease 0s infinite normal forwards;
+}
+@keyframes box2 {
+    0%{
+               background: radial-gradient(rgb(230, 230, 243) 10%, rgb(178, 178, 241) 50%, rgb(106, 106, 223) 49%);
+            }
+    50%{
+                background: radial-gradient(rgb(147, 147, 194) 20%, rgb(178, 178, 241) 50%, rgb(106, 106, 223) 49%);
+                     backdrop-filter:blur(25px);
+            }
+            75%{
+                background: radial-gradient(rgb(49, 49, 158) 30%, rgb(178, 178, 241) 50%, rgb(106, 106, 223) 49%);
+        backdrop-filter:blur(25px);
+            }
+    100%{
+                        background: transparent;
+            }
+}
+.box3{
+        width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+ top: 90vh;
+ left: 12%;
+ animation: box3 5s ease 0s infinite reverse backwards;
+}
+@keyframes box3 {
+    0%{
+                background: radial-gradient(circle at 50% 50%, #d4cfcf, #e2d8d8);  
+              }
+    50%{
+                background: radial-gradient(circle at 30% 30%, #eb7777, #cabfbf); 
+               }
+    75%{
+                background: radial-gradient(circle at 40% 40%, #eb4c4c, #dd8c8c);   
+    }
+    100%{
+                background: transparent;
+             }
+            }
+.box4{
+        width: 50px;
+    height: 50px;
+    border-radius: 50%;
+        background-color: red;
+    font-size: 40px;
+    position: absolute;
+ top: 40vh;
+ right: 10%;
+  animation: box3 5s ease 0s infinite reverse backwards;
+}
+.box5{
+        width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #0c17ac;
+        font-size: 40px;
+    position: absolute;
+ top: 40vh;
+ right: 30%;
+ animation: box5 5s ease 0s infinite reverse backwards;
+}
+@keyframes box5 {
+    0%{
+                    transform: translateY(30px);
+    }
+    50%{
+            transform: translateY(10px);
+    }
+    100%{
+                    transform: translateY(30px);
+    }
+}
+.box6{
+        width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    position: absolute;
+ top: 70vh;
+ right: 30%;
+ animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+.box7{
+        width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+ top: 90vh;
+ right: 10%;
+ animation: box1 5s ease 0s infinite normal none;
+}
+@media (max-width: 768px) {
+.animation{
+display:none;
+}
 }
 
-.first-room{
-    position: absolute
-
-}
-.second-room{
-    position: absolute
-
-}
-
-
-
-
-
-
-
-
-
-
+/* hr */
 .welcome{
     width:30%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -72,7 +182,6 @@ form{
     margin-bottom: 40px;
     gap:10px;
     position: relative;
-
 }
 label{
     font-size: 15px;
@@ -113,7 +222,6 @@ font-size: 20px;
     display: none;
  opacity: 0.5;
 cursor: pointer;
-
 }
 
 /* hr */
@@ -159,7 +267,7 @@ background: linear-gradient(to left, rgb(235, 177, 136), rgb(231, 143, 79), choc
 .agree a{
     color: blue;
 }
-
+/* hr */
 footer{
     text-align: center;
     margin-block: 30px;
@@ -175,9 +283,7 @@ footer{
     margin-top: 3px;
 }
 
-
 /* hr */
-
 .small{
     font-size: 10px;
     margin-top: -20px;
@@ -207,7 +313,6 @@ font-size: 20px;
     display: none;
  opacity: 0.5;
 cursor: pointer;
-
 }
 @media (max-width: 480px) {
     .submit{

@@ -121,6 +121,7 @@
  </section>
 </main>
 
+  <!-- <div class="popup-fixed"> -->
 
 <section class="popup-container">
   <i class="fa-solid fa-close intro-close"></i>   
@@ -131,7 +132,7 @@
   <div class="title-form">
 <label for="title-input">Title</label>
 <input type="text" id="title-input" placeholder="Enter note title">
-<label for="content">Content</label>
+<label for="content" class="content-label" >Content</label>
 <textarea name="content" id="content" placeholder="Write your note here"></textarea>
   </div>
   <div class="cancel-createnote">
@@ -139,7 +140,7 @@
     <button type="submit" id="submit-note"  rows="4">Create Note</button>
   </div>
 </section>
-
+<!-- </div> -->
 <script>
 fetch("aside.html")
   .then(res => res.text())

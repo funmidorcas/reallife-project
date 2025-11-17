@@ -91,6 +91,7 @@ hr{
 } 
 .sidebar.collapsed .sidebar-header{
     margin-right: 15px;
+    margin-block: 20px;
 } 
  .guest{
     display: flex;

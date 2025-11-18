@@ -33,19 +33,19 @@ button.addEventListener("click", () => {
 
 
 
-     const links = document.querySelectorAll(".nav-item")
-  const activeIndex = localStorage.getItem("activeLink")
-  if (activeIndex !== null && links[activeIndex]) {
-    links[activeIndex].style.background = "#b1bbe0"
-    links[activeIndex].style.borderRadius = "10px"
-  }
-  links.forEach((link, index) => {
-    link.addEventListener("click", () => {
-        link.style.background = "#b1bbe0"
-        link.style.borderRadius = "10px"
-      localStorage.setItem("activeLink", index)
-    })
-  })
+  //    const links = document.querySelectorAll(".nav-item")
+  // const activeIndex = localStorage.getItem("activeLink")
+  // if (activeIndex !== null && links[activeIndex]) {
+  //   links[activeIndex].style.background = "#b1bbe0"
+  //   links[activeIndex].style.borderRadius = "10px"
+  // }
+  // links.forEach((link, index) => {
+  //   link.addEventListener("click", () => {
+  //       link.style.background = "#b1bbe0"
+  //       link.style.borderRadius = "10px"
+  //     localStorage.setItem("activeLink", index)
+  //   })
+  // })
 
 window.addEventListener("load", () => {
   let fullname = document.querySelector(".guest-h3");

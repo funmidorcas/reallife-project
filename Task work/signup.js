@@ -54,8 +54,8 @@ submit.addEventListener("click", () => {
     let fullNameValue = fullname.value; 
     let emailValue = email.value;
     let imageLetter = fullNameValue.charAt(0).toUpperCase();
-    sessionStorage.setItem("fullname", JSON.stringify(fullNameValue));
-    sessionStorage.setItem("imageletter", JSON.stringify(imageLetter));
-    sessionStorage.setItem("email", JSON.stringify(emailValue));
+    localStorage.setItem("fullname", JSON.stringify(fullNameValue));
+    localStorage.setItem("imageletter", JSON.stringify(imageLetter));
+    localStorage.setItem("email", JSON.stringify(emailValue));
     window.location.href = "aside.html";
 });})

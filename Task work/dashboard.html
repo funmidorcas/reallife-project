@@ -141,16 +141,24 @@
   </div>
 </section>
 <!-- </div> -->
-<script>
-fetch("aside.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("aside-container").innerHTML = data
 
-    const script = document.createElement("script")
-    script.src = "aside.js"
-    document.body.appendChild(script)
-  })
+<script>
+  fetch("aside.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("aside-container").innerHTML = data;
+
+      const script = document.createElement("script");
+      script.src = "aside.js";
+      script.onload=()=>{
+// Wait a tick to let DOM update
+        setTimeout(() => {
+          document.body.classList.remove("hidden-page");
+          document.body.classList.add("ready");
+        }, 50);
+      };
+      document.body.appendChild(script);
+    });
 </script>
 <script src="dashboard.js"></script>
  </body>

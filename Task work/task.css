@@ -7,6 +7,13 @@
 body{
   font-family: "Inter", sans-serif;
       background-color: #f3f4f8;
+       visibility: hidden;
+  opacity: 0;
+}
+body.ready {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
 }
 @media (min-width: 768px){
 main{
@@ -113,7 +120,11 @@ gap: 5px;
 }
 @media (max-width: 768px){
   .login-signup{
-  width: 60%;
+  width: 90%;
+    font-size: 8px;
+  }
+  .link-item{
+    width: 50%;
   }
 }
 
@@ -147,6 +158,17 @@ text-align: center;
   padding: 8px;
   border-radius: 10px;
 }
+@media (max-width: 768px){
+.conbine-row{
+gap: 10px;
+font-size: 13px;
+}
+.conbine-last-sub{
+  font-size: 13px;
+  gap:2px;
+  margin-top: 10px;
+}
+}
 /* hr */
 .dotted{
   border: 3px dashed gray;
@@ -169,4 +191,12 @@ text-align: center;
 }
 button{
     cursor: pointer;
+}
+@media (max-width: 768px){
+  .last-p{
+     font-size: 13px;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  }
 }

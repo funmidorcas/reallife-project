@@ -55,21 +55,27 @@
  <div class="dotted">
   <div class="circle"></div>
   <p>No tasks yet</p>
-  <p>click <a href="">"Add Task"</a> to create your first task</p>
+  <p class="last-p">click <a href="">"Add Task"</a> to create your first task</p>
  </div>
 </section>
 </main>
 <script>
-    fetch("aside.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("aside-container").innerHTML = data
+  fetch("aside.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("aside-container").innerHTML = data;
 
-    const script = document.createElement("script")
-    script.src = "aside.js"
-    document.body.appendChild(script)
-  })
-
+      const script = document.createElement("script");
+      script.src = "aside.js";
+      script.onload=()=>{
+// Wait a tick to let DOM update
+        setTimeout(() => {
+          document.body.classList.remove("hidden-page");
+          document.body.classList.add("ready");
+        }, 50);
+      };
+      document.body.appendChild(script);
+    });
 </script>
 <script src="task.js"></script>
 </body>

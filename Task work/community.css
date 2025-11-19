@@ -7,6 +7,13 @@
 body{
   font-family: "Inter", sans-serif;
       background-color: #f3f4f8;
+       visibility: hidden;
+  opacity: 0;
+}
+body.ready {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
 }
 @media (min-width: 768px){
 main{

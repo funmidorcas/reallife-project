@@ -9,6 +9,13 @@ button{
 body{
   font-family: "Inter", sans-serif;
       background-color: #f3f4f8;
+       visibility: hidden;
+  opacity: 0;
+}
+body.ready {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
 }
 @media (min-width: 768px){
 main{
@@ -110,7 +117,11 @@ gap: 5px;
 }
 @media (max-width: 768px){
   .login-signup{
-  width: 60%;
+  width: 90%;
+    font-size: 8px;
+  }
+  .link-item{
+    width: 50%;
   }
 }
 .section-row{
@@ -153,12 +164,32 @@ font-size: 13px;
 display: flex;
 gap: 5px;
 }
+.second-link-item:hover{
+  background-color: #fff;
+}
 @media (max-width: 768px){
   .second-login-signup{
   width: 80%;
   }
+  .second-link-item{
+  font-size: 10px;
+  gap:5px;
+  }
   .generate{
     width: 35%;
+  }
+}
+@media (max-width: 480px){
+  .second-login-signup{
+  width: 100%;
+  }
+    .second-link-item{
+      gap:2px;
+
+    }
+  .generate{
+    width: 50%;
+    margin-top: 20%;
   }
 }
 .dotted{
@@ -179,4 +210,12 @@ gap: 5px;
   height: 40px;
   border-radius: 50%;
   border: 3px solid gray;
+}
+@media (max-width: 768px){
+  .last-p{
+     font-size: 13px;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  }
 }

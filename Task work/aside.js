@@ -33,59 +33,19 @@ button.addEventListener("click", () => {
 
 
 
-  //    const links = document.querySelectorAll(".nav-item")
-  // const activeIndex = localStorage.getItem("activeLink")
-  // if (activeIndex !== null && links[activeIndex]) {
-  //   links[activeIndex].style.background = "#b1bbe0"
-  //   links[activeIndex].style.borderRadius = "10px"
-  // }
-  // links.forEach((link, index) => {
-  //   link.addEventListener("click", () => {
-  //       link.style.background = "#b1bbe0"
-  //       link.style.borderRadius = "10px"
-  //     localStorage.setItem("activeLink", index)
-  //   })
-  // })
 
-window.addEventListener("load", () => {
-  let fullname = document.querySelector(".guest-h3");
-  let email = document.querySelector(".guest-a");
-  let imageletter = document.querySelector(".guest-img"); // h1 element
+// window.addEventListener("DOMContentLoaded", () => {
+  const fullname = document.querySelector(".guest-h3")
+  const email = document.querySelector(".guest-a")
+  const imageletter = document.querySelector(".guest-img")
 
-  let namevalue = JSON.parse(sessionStorage.getItem("fullname")) || "";
-  let imagelettervalue = JSON.parse(sessionStorage.getItem("imageletter")) || "";
-  let emailvalue = JSON.parse(sessionStorage.getItem("email")) || "";
+  const namevalue = JSON.parse(localStorage.getItem("fullname"))
+  const emailvalue = JSON.parse(localStorage.getItem("email"))
+  const imagelettervalue = JSON.parse(localStorage.getItem("imageletter"))
 
-  if (fullname) fullname.textContent = namevalue;
-  if (email) email.textContent = emailvalue;
-  if (imageletter) imageletter.textContent = imagelettervalue;
-});
+  if (namevalue) fullname.textContent = namevalue
+  if (emailvalue) email.textContent = emailvalue
+  if (imagelettervalue) imageletter.textContent = imagelettervalue
+console.log(namevalue, emailvalue, imagelettervalue)
 
-
-
-
-  // const fullnameEl = document.querySelector(".guest-h3");
-  // const emailEl = document.querySelector(".guest-a");
-
-  // if (!fullnameEl || !emailEl) return; // safety check
-
-  // // get stored values
-  // const fullnameValue = sessionStorage.getItem("fullname") || "";
-  // const emailValue = sessionStorage.getItem("email") || "";
-
-  // fullnameEl.textContent = fullnameValue;
-  // emailEl.textContent = emailValue;
-
-
-
-//   let fullname = document.querySelector(".guest-h3")
-// let email = document.querySelector(".guest-a")
-// let imageletter = document.querySelector(".guest-img")
-
-//   let namevalue = JSON.parse(sessionStorage.getItem("fullname"))
-//   let imagelettervalue = JSON.parse(sessionStorage.getItem("imageletter"))
-//   let emailvalue = JSON.parse(sessionStorage.getItem("email"))
-
-// fullname.textContent=namevalue
-// email.textContent= emailvalue
-// imageletter.textContent = imagelettervalue
+// })

@@ -23,7 +23,7 @@
 
 <main>
  <div class="good-div">
-  <h1 class="good-h1">Good afternoon, <span class="funmi-span">Funmi!</span></h1>
+  <h1 class="good-h1">Good <span class="greeting"></span>, <span class="name-span">John Doe</span></h1>
   <p class="goodmorning-note">Here's what's happening with your productivity today</p>
  </div>
  <!-- <hr> -->
@@ -35,7 +35,7 @@
     <span class="fa-solid fa-pen-to-square box-icon"></span>
     </div>
     <div class="taskes-score">
-      <p class="taskes-p">0</p>
+      <p class="taskes-p newtask-p">0</p>
       <p class="completed"><span class="completed-span">0</span> completed</p>
     </div>
     </div>
@@ -56,7 +56,7 @@
     <span class="fa-regular fa-clipboard box-icon"></span>
     </div>
     <div class="taskes-score">
-      <p class="taskes-p">0</p>
+      <p class="taskes-p newtask-p taskes-p2">0</p>
       <p class="completed"> Saved notes</p>
     </div>
         </div>
@@ -81,9 +81,15 @@
     <i class="fa-regular fa-clock"></i>
   <p>Recent Tasks</p>
   </div>
-  <div>
+  <div class="notes-display">
     <h1 class="tasks-list"></h1>
     <p class="textarea-list"></p>
+    <!-- <h1 class="tasks-list"></h1>
+    <p class="textarea-list"></p>
+    <h1 class="tasks-list"></h1>
+    <p class="textarea-list"></p>
+    <h1 class="tasks-list"></h1>
+    <p class="textarea-list"></p> -->
   </div>
   <div class="center">
       <span class="fa-solid fa-pen-to-square"></span>
@@ -131,12 +137,12 @@
   <p>Jot down your thoughts and ideas</p></div>
   <div class="title-form">
 <label for="title-input">Title</label>
-<input type="text" id="title-input" placeholder="Enter note title">
+<input type="text" id="title-input" placeholder="Enter note title" required>
 <label for="content" class="content-label" >Content</label>
-<textarea name="content" id="content" placeholder="Write your note here"></textarea>
+<textarea name="content" id="content" placeholder="Write your note here" required></textarea>
   </div>
   <div class="cancel-createnote">
-    <button type="reset" id="reset">Cancel</button>
+    <button type="reset" id="reset">Remove last</button>
     <button type="submit" id="submit-note"  rows="4">Create Note</button>
   </div>
 </section>

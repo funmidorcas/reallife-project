@@ -247,7 +247,6 @@ padding: 7px 15px;
 .sidebar-menu-button i{
     font-size: 20px;
 }
-
     .sidebar.collapsed{
         width: 260px;
         left:-260px;

@@ -34,18 +34,3 @@ button.addEventListener("click", () => {
 
 
 
-// window.addEventListener("DOMContentLoaded", () => {
-  const fullname = document.querySelector(".guest-h3")
-  const email = document.querySelector(".guest-a")
-  const imageletter = document.querySelector(".guest-img")
-
-  const namevalue = JSON.parse(localStorage.getItem("fullname"))
-  const emailvalue = JSON.parse(localStorage.getItem("email"))
-  const imagelettervalue = JSON.parse(localStorage.getItem("imageletter"))
-
-  if (namevalue) fullname.textContent = namevalue
-  if (emailvalue) email.textContent = emailvalue
-  if (imagelettervalue) imageletter.textContent = imagelettervalue
-console.log(namevalue, emailvalue, imagelettervalue)
-
-// })

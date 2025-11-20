@@ -3,21 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="aside.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
-<div id="aside-container"></div>
+  <div class="header">
+<div id="aside-container">
+    <button class="sidebar-menu-button">
+        <i class="fa-solid fa-bars icon menu-bar"></i>
+</button>
+
+  <aside class="sidebar">
+  <header class="sidebar-header">
+    <a href="#" class="header-logo">
+      <img src="./asset/tasklogo.jpg" class="image" alt="" >
+    </a>
+               <h1 class="taskmaster">TaskMaster</h1>
+    <button class="sidebar-toggler">
+<i class="fa-solid fa-close top-close"></i>   
+<i class="fa-solid fa-bars new-menu"></i>
+</button>
+  </header>
+
+<hr>
+        <section class="guest">
+      <h1 class="guest-img"></h1>
+ <div class="guest-div">
+ <h3 class="guest-h3"></h3>
+ <a class="guest-a" href=""></a>
+ </div>
+        </section>
+            <hr> 
+<nav class="sidebar-nav">
+  <ul class="nav-list primary-nav">
+    <li class="nav-item">
+      <a href="dashboard.html" class="nav-link">
+        <span class="fa-solid fa-table-columns"></span>
+        <span class="nav-label">Dashboard</span>
+      </a>
+      <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="dashbord.html">Dashboard</a>
+  </li>
+</ul>
+</li>
+
+    
+    <li class="nav-item">
+      <a href="task.html" class="nav-link">
+        <span class="fa-solid fa-pen-to-square"></span>
+        <span class="nav-label">Task</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="task.html">Task</a>
+  </li>
+</ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="community.html" class="nav-link">
+        <span class="fa-solid fa-users icon"></span>
+        <span class="nav-label">Community</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="community.html">Community</a>
+  </li>
+</ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="expenses.html" class="nav-link">
+        <span class="fa-solid fa-dollar-sign"></span>
+        <span class="nav-label">Expenses</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="expenses.html">Expenses</a>
+  </li>
+</ul>
+    </li>
+
+    <li class="nav-item">
+      <a href="notes.html" class="nav-link">
+        <span class="fa-regular fa-clipboard"></span>
+        <span class="nav-label">Notes</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="notes.html">Notes</a>
+  </li>
+</ul>
+    </li>
+
+        <li class="nav-item">
+      <a href="setting.html" class="nav-link">
+        <span class="fa-solid fa-sun icon"></span>
+        <span class="nav-label">Settings</span>
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="setting.html">Settings</a>
+  </li>
+</ul>
+    </li>
+  </ul>
+
+<hr>
+
+  <ul class="nav-list secondary-nav">
+    <li class="nav-item">
+      <a href="login.html" class="nav-link">
+                <span class="fa-solid fa-right-to-bracket"></span>
+        <span class="nav-label">Logout</span>
+
+      </a>
+            <ul class="dropdown-menu">
+  <li class="nav-item">
+    <a class="nav-link dropdown-title" href="login.html">Logout</a>
+  </li>
+</ul>
+
+    </li>
+  </ul>
+</nav>
+
+</aside>
+
+</div>
 <div class="head-title">
   <img src="./asset/tasklogo.jpg" alt="">
 <h1 class="task-title">TaskMaster</h1>
 </div>
-  </header>
+</div>
 
  <!-- <hr> -->
 
@@ -84,12 +208,6 @@
   <div class="notes-display">
     <h1 class="tasks-list"></h1>
     <p class="textarea-list"></p>
-    <!-- <h1 class="tasks-list"></h1>
-    <p class="textarea-list"></p>
-    <h1 class="tasks-list"></h1>
-    <p class="textarea-list"></p>
-    <h1 class="tasks-list"></h1>
-    <p class="textarea-list"></p> -->
   </div>
   <div class="center">
       <span class="fa-solid fa-pen-to-square"></span>
@@ -148,7 +266,7 @@
 </section>
 <!-- </div> -->
 
-<script>
+<!-- <script>
   fetch("aside.html")
     .then(res => res.text())
     .then(data => {
@@ -165,7 +283,8 @@
       };
       document.body.appendChild(script);
     });
-</script>
+</script> -->
+<script src="aside.js"></script>
 <script src="dashboard.js"></script>
  </body>
   </html>

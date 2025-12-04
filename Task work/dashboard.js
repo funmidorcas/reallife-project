@@ -43,11 +43,7 @@ const nameEl = document.querySelector(".name-span")
   const imagelettervalue = JSON.parse(localStorage.getItem("imageletter"))
   
 function capitalizeEachWord(text) {
-  return text
-    .toLowerCase()
-    .split(" ")
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ")
+  return text.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")
 }
 if (namevalue) {
   const capitalized = capitalizeEachWord(namevalue)

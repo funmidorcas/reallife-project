@@ -48,3 +48,14 @@ console.log(namevalue, emailvalue, imagelettervalue)
 
 // })
 
+function capitalizeEachWord(text) {
+  return text.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")
+}
+if (namevalue) {
+  const capitalized = capitalizeEachWord(namevalue)
+  fullname.textContent = capitalized
+  nameEl.textContent = capitalized
+}
+   if (emailvalue) email.textContent = emailvalue
+  if (imagelettervalue) imageletter.textContent = imagelettervalue
+console.log(namevalue, emailvalue, imagelettervalue)

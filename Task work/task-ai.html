@@ -68,7 +68,6 @@
       const script = document.createElement("script");
       script.src = "aside.js";
       script.onload=()=>{
-// Wait a tick to let DOM update
         setTimeout(() => {
           document.body.classList.remove("hidden-page");
           document.body.classList.add("ready");

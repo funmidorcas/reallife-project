@@ -15,7 +15,7 @@ const links = document.querySelectorAll(".link-item")
 
 const lock = document.querySelector(".icon4");
 const open = document.querySelector(".icon3");
-const password = document.querySelector("#password");
+let password = document.querySelector("#password");
 const submit = document.querySelector(".submit")
 let email = document.querySelector("#email")
 const fullname = document.querySelector("#fullname")
@@ -42,16 +42,20 @@ password.addEventListener("click", ()=>{
 
 })
 
+ submit.addEventListener("click", ()=>{
+  let passwordinfo = password.value 
+let emailinfo   = email.value
+  const passwordvalue = JSON.parse(localStorage.getItem("password"))
+  const emailvalue = JSON.parse(localStorage.getItem("email"))
 
-// submit.addEventListener("click", ()=>{
-//    sessionStorage.setItem("email", JSON.stringify(email.value)); 
-//   //  sessionStorage.setItem("fullname", JSON.stringify(fullname.value)); 
-//      window.location.href = "aside.html";
-// })
-
-
-// const form = document.getElementById("form")
-
+ if(emailvalue === emailinfo && passwordvalue === passwordinfo){
+      window.location.href = "dashboard.html";
+      alert(`opening...`)
+ }
+ else{
+  alert(`invalid parameters,try again`)
+ }
+})
 
 
 });

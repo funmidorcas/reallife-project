@@ -53,9 +53,12 @@ fullname.addEventListener("click", ()=>{
 submit.addEventListener("click", () => {
     let fullNameValue = fullname.value; 
     let emailValue = email.value;
+    let passwordValue = password.value
     let imageLetter = fullNameValue.charAt(0).toUpperCase();
     localStorage.setItem("fullname", JSON.stringify(fullNameValue));
+    localStorage.setItem("password", JSON.stringify(passwordValue));
     localStorage.setItem("imageletter", JSON.stringify(imageLetter));
     localStorage.setItem("email", JSON.stringify(emailValue));
+    alert(`account created succefully`)
     window.location.href = "aside.html";
 });})

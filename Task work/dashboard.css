@@ -10,17 +10,11 @@ body{
  a{
  color: gray;
 } 
-.sidebar-header .sidebar-toggler{
+/* .sidebar-header .sidebar-toggler{
   color: yellow;
       right: 15px;
       font-size: 20px;
-      align-self: center;
-      justify-self: center;
-      align-content: center;
-       align-items: center;
-       place-content: center;
-       place-items: center;
-}
+} */
 .sidebar-header .taskmaster{
   font-size: 16px;
 }

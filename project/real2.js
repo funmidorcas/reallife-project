@@ -49,10 +49,33 @@ document.querySelector('.view').addEventListener('click', function () {
 
 
   const form = document.getElementById('myForm');
+  const name =document.getElementById('name')
+  const email =document.getElementById('email')
+  const password =document.getElementById('password')
+  const work =document.getElementById('work')
+  const comments =document.getElementById('comments')
 
   form.addEventListener('submit', function (e) {
     e.preventDefault(); 
-    
+    fetch("https://oladipupofunmilayodorcas@gmail.com", {
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      
+      body: JSON.stringify({
+  fullname: name.value,
+   worknote : work.value,
+   email: email.value, 
+   commentnote: comments.textContent
+      })
+    })
+    .then(res => res.json())
+    .then(data =>{
+          alert('Submitted!');
+
+    })
+.catch(err => console.error(err))
     alert('Submitted!');
     
     const formData = new FormData(form);

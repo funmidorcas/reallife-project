@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Potfolio Page</title>
+  <title>Potfolio Page</title>
   <link href="../src/output.css" rel="stylesheet">
 <link rel="stylesheet" href="real.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,18 +12,116 @@
   <script src="https://kit.fontawesome.com/c6de6d7637.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-sans sm:w-[480px]" style="font-family: 'Inter', sans-serif;">
+  <header class="head flex">
+    <img class="logo" src="https://cdn.dribbble.com/userupload/19052738/file/original-f6ebcdf2eab46a1d9c548c4e050d9490.png?crop=0x0-1600x1200&format=webp&resize=400x300&vertical=center" alt="">
+    
+    
+ <div class="menu">
 
- <h1>Welcome</h1>
-   <button>Enter Site</button>
+ <nav class="nav-bar set">
+
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open">
+        <i class="fa-solid fa-bars icon menu-bar"><span class="show"></span></i>    
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+
+    <div class="links">
+        <label for="sidebar-active" class="close">
+            <i class="fa-solid fa-xmark icon"></i>
+        </label>
 
 
-   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-     let button = document.querySelector("button")
-     button.addEventListener('click', function() {
+    <ul class="nav-ul">
+        <li><a href="" class="hom">Home</a>
+        <div class="new-nav">
+           <ul>
+            <li><a href="">side</a></li>
+            <li><a href="">side</a></li>
+            <li><a href="">side</a></li>
+            <li><a href="">side</a></li>
+           </ul>
+        </div>
+        
+        </li>
+        <li><a href="">Shop</a>      
+               <div class="new-nav">
+           <ul>
+             <li><a href="">start</a></li>
+            <li><a href="">start</a></li>
+            <li><a href="">start</a></li>
+            <li><a href="">start</a></li>
+           </ul>
+        </div>
+</li>
+        <li><a href="">Product</a>
+                <div class="new-nav">
+           <ul>
+             <li><a href="">third</a></li>
+            <li><a href="">third</a></li>
+            <li><a href="">third</a></li>
+            <li><a href="">third</a></li>
+           </ul>
+        </div>
 
-        window.location.href = "real2.html";
-    })
-    })
-   </script>
-   </body>
+        </li>
+        <li><a href="">Contact</a>
+                <div class="new-nav">
+            <ul>
+                <li><a href="">cont</a></li>
+            <li><a href="">cont</a></li>
+            <li><a href="">cont</a></li>
+            <li><a href="">cont</a></li>
+            </ul>
+        </div>
+</li>
+
+    </ul>
+</nav></div>
+
+
+<!-- <nav class="head-nav flex">
+        <li><a href="" class="home active">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">School</a></li>
+        <li><a href="">Certificate</a></li>
+        <li><a href="">About Me</a></li>
+   </nav> -->
+</header>
+
+<section class="home flex">
+    <div class="home-detail">
+    <h1>Funmilayo Adeniji</h1>
+    <h2>I'm a  
+        <span style="--i:4;" data-text="Coder">Coder</span>
+        <span style="--i:3;" data-text="Developer">Developer</span>
+        <span style="--i:2;" data-text="Designer">Designer</span>
+        <span style="--i:1;" data-text="Youtube">Youtuber</span>
+    </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ipsam.</p>
+ <div class="btn-sci flex">
+     <a href="" class="btn">Download CV</a>
+  <div class="sci">
+    <a href=""><i class="fa-brands fa-github"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    <a href=""><i class="fa-brands fa-discord"></i></a>
+    <a href=""><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</div>
+</div>
+
+
+<div class="home-img">
+    <div class="img-box">
+        <div class="img-item">
+            <img class="me" src="asset/me.jpg" alt="">
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<script src="real.js"></script>
+</body>
+</html>

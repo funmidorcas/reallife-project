@@ -55,37 +55,42 @@ document.querySelector('.view').addEventListener('click', function () {
   const work =document.getElementById('work')
   const comments =document.getElementById('comments')
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault(); 
-    fetch("https://oladipupofunmilayodorcas@gmail.com", {
-      method:"POST",
-      headers:{
-        "Content-Type":"application/json"
-      },
-      
-      body: JSON.stringify({
-  fullname: name.value,
-   worknote : work.value,
-   email: email.value, 
-   commentnote: comments.textContent
-      })
-    })
-    .then(res => res.json())
-    .then(data =>{
-          alert('Submitted!');
+const submitBtn = form.querySelector('input[type="submit"]');
 
-    })
-.catch(err => console.error(err))
-    alert('Submitted!');
-    
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
     const formData = new FormData(form);
-    const data = {};
-    formData.forEach((value, key) => {
-      data[key] = value;
-    });
+    formData.append("access_key", "07ffa619-1d96-4319-8a11-c135e51b575b");
 
-    console.log('Form data submitted:', data);
-  });
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
+
 
 
 const sections = document.querySelectorAll(".progresss");

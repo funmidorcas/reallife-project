@@ -64,7 +64,7 @@ section{
 }
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){
   
 .nav {
     display: none;
@@ -142,7 +142,7 @@ color: aliceblue;
     grid-template-columns: repeat(4, 1fr);
       
   }
-  @media only screen and (max-width: 480px){
+  @media only screen and (max-width: 768px){
     #my-image{
   height: 100px;
   margin-bottom: 5px;

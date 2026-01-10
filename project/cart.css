@@ -306,5 +306,5 @@ line-height: 40px;
 }
 
 .img-name.selected {
-    border: 2px solid black; /* Adds a blue border to the selected item */
+    border: 2px solid black; 
 }

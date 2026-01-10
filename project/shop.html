@@ -15,19 +15,19 @@
   <section>
      <div class="head flex justify-between mt-[10px]">
       <div class="w-[50px] h-[50px]">
-         <img   class="logo w-full h-full rounded-full object-cover" src="./asset/Logo.jpg" alt="logo">
+         <img loading="lazy"  class="logo w-full h-full rounded-full object-cover" src="./asset/Logo.jpg" alt="logo">
       </div>
 
     
  <div class="menu-container">
   <i class="fa-solid fa-bars menu-icon lg:hidden" id="menuIcon"></i>
   
-  <nav class="nav">
+  <nav id="home" class="nav">
     <ul class="menu-list">
       <li><a href="#home">Home</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Product</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#product">Product</a></li>
+      <li><a href="#contact">Contact Us</a></li>
       <i class="fa-solid fa-xmark close-icon lg:hidden" id="closeIcon"></i>
 
     </ul>
@@ -50,21 +50,21 @@
           <li><a href="">Home</a></li>
           <li><a href="">shop</a></li>
         </ul>
-        <h1>Shop Page</h1>
+        <h1 id="shop">Shop Page</h1>
         <p>Shop Affordable and Quality shoes with Us</p>
       </div>
      </div> 
  
-     <div class="filter">
+     <div id="product" class="filter">
       <button class="category-button active" onclick="applyCategory('all')">ALL</button>
       <button class="category-button" onclick="applyCategory('new')">NEW IN</button>
       <button class="category-button" onclick="applyCategory('bestseller')">BEST SELLER</button>
       <button class="category-button" onclick="applyCategory('luxury')">LUXURY</button>
     </div>
- <div class="product-list ">
+ <div  class="product-list ">
   
   <div class="product" data-category="new" data-product-id="items" onclick="openProductPage(this)">
-             <img   src="asset/shoe1.jpg" id="my-image" alt="">
+             <img loading="lazy"  src="asset/shoe1.jpg" id="my-image" alt="">
 
             <p id="product-name" class="text-sm font-medium">Slippers 01</p>
             <p class="price-tag text-sm font-medium">10,000</p>
@@ -80,7 +80,7 @@
 
 
   <div class="product" data-category="bestseller" data-product-id="cartt" onclick="openProductPage(this)">
-               <img   src="asset/shoe10.jpg" id="my-image" alt="">
+               <img loading="lazy"  src="asset/shoe10.jpg" id="my-image" alt="">
 
               <p id="product-name" class="text-sm font-medium"> Slippers 02</p>
               <p class="price-tag text-sm font-medium">N7,500</p>
@@ -96,7 +96,7 @@
 
    
     <div class="product" data-category="luxury" data-product-id="items" onclick="openProductPage(this)">
-                     <img   src="asset/shoe9.jpg" id="my-image" alt="">
+                     <img loading="lazy"  src="asset/shoe9.jpg" id="my-image" alt="">
 
                     <p id="product-name" class="text-sm font-medium"> Slippers 03</p>
                     <p class="price-tag text-sm font-medium">N7,000</p>
@@ -111,7 +111,7 @@
 
      
     <div class="product" data-category="bestseller" data-product-id="cartt" onclick="openProductPage(this)">
-                 <img   src="asset/shoe2.jpg"  id="my-image" alt="">
+                 <img loading="lazy"  src="asset/shoe2.jpg"  id="my-image" alt="">
 
                 <p id="product-name" class="text-sm font-medium"> Slippers 04</p>
                 <p class="price-tag text-sm font-medium">N10,000</p>
@@ -126,7 +126,7 @@
     
     
         <div class="product" data-category="luxury" data-product-id="items" onclick="openProductPage(this)">
-           <img   src="asset/shoe4.jpg" id="my-image" alt="">
+           <img loading="lazy"  src="asset/shoe4.jpg" id="my-image" alt="">
 
           <p id="product-name" class="text-sm font-medium">Slippers 05</p>
           <p class="price-tag text-sm font-medium">N12,000</p>
@@ -141,7 +141,7 @@
     
     
         <div class="product" data-category="luxury" data-product-id="cartt"  onclick="openProductPage(this)">
-                 <img   src="asset/shoe7.jpg" id="my-image" alt="">
+                 <img loading="lazy"  src="asset/shoe7.jpg" id="my-image" alt="">
 
                 <p id="product-name" class="text-sm font-medium"> Slippers 06</p>
                 <p class="price-tag text-sm font-medium">N6,000</p>
@@ -156,7 +156,7 @@
 
 
     <div class="product" data-category="new" data-product-id="cartt" onclick="openProductPage(this)">
-           <img   src="asset/shoe5.jpg" id="my-image" alt="">
+           <img loading="lazy"  src="asset/shoe5.jpg" id="my-image" alt="">
 
           <p id="product-name" class="text-sm font-medium">Slippers 07</p>
           <p class="price-tag text-sm font-medium">N7,000</p>
@@ -171,7 +171,7 @@
     
     
         <div class="product" data-category="bestseller" data-product-id="items" onclick="openProductPage(this)">
-                         <img   src="asset/shoe8.jpg" id="my-image" alt="">
+                         <img loading="lazy"  src="asset/shoe8.jpg" id="my-image" alt="">
 
                         <p id="product-name" class="text-sm font-medium pt-[10px]">Slippers 08</p>
                         <p class="price-tag text-sm font-medium">N5,000</p>
@@ -182,7 +182,7 @@
               <i class="fa-solid fa-star"></i></div>
                             </div>
                             <div class="product hide-item" data-category="bestseller" data-product-id="items" onclick="openProductPage(this)">
-                               <img   src="asset/shoe7.jpg" id="my-image" alt="">
+                               <img loading="lazy"  src="asset/shoe7.jpg" id="my-image" alt="">
       
                               <p id="product-name" class="text-sm font-medium pt-[10px]"> Slippers 09</p>
                               <p class="price-tag text-sm font-medium">N6,000</p>
@@ -194,7 +194,7 @@
                                   </div>
 
                                   <div class="product hide-item" data-category="bestseller" data-product-id="cart" onclick="openProductPage(this)">
-                                     <img   src="asset/shoe10.jpg" id="my-image" alt="">
+                                     <img loading="lazy"  src="asset/shoe10.jpg" id="my-image" alt="">
             
                                     <p id="product-name" class="text-sm font-medium pt-[10px]">  Slippers 10</p>
                                     <p class="price-tag text-sm font-medium">N10,000</p>
@@ -206,7 +206,7 @@
                                         </div>
 
                                         <div class="product hide-item" data-category="bestseller" data-product-id="items" onclick="openProductPage(this)">
-                                           <img   src="asset/shoe5.jpg" id="my-image" alt="">
+                                           <img loading="lazy"  src="asset/shoe5.jpg" id="my-image" alt="">
                   
                                           <p id="product-name" class="text-sm font-medium pt-[10px]"> Slippers 11</p>
                                           <p class="price-tag text-sm font-medium">N9,000</p>
@@ -218,7 +218,7 @@
                                               </div>
 
                                               <div class="product hide-item" data-category="bestseller" data-product-id="cartt" onclick="openProductPage(this)">
-                                                 <img   src="asset/shoe10.jpg" id="my-image" alt="">
+                                                 <img loading="lazy"  src="asset/shoe10.jpg" id="my-image" alt="">
                         
                                                 <p id="product-name" class="text-sm font-medium pt-[10px]"> Slippers 12</p>
                                                 <p class="price-tag text-sm font-medium">N12,000</p>
@@ -241,7 +241,7 @@
 
 
 
- <div class="background-img">
+ <div id="contact" class="background-img">
   <div class="bg-note text-center p-[100px]">
     <h1>Join Our Newsletter</h1>
     <p>Sign up for deals, new products, and promotions</p>
@@ -256,7 +256,7 @@
   <footer class=" flex flex-col lg:flex-row">
     <div class="foot flex flex-col lg:flex-row">
       <div class="foot-img w-[50px] h-[50px]">
-         <img   class="logo w-full h-full rounded-full object-cover" src="./asset/Logo.jpg" alt="logo">
+         <img loading="lazy"  class="logo w-full h-full rounded-full object-cover" src="./asset/Logo.jpg" alt="logo">
       </div>
       <p class="vert-note">Shoes and Bag Store</p>
       </div>

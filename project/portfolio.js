@@ -111,14 +111,14 @@ sections.forEach(section => observer.observe(section));
  let input = document.querySelectorAll(".input")
   input.forEach(function(e) {
     e.addEventListener("input", event =>{
-    e.textContent =  e.style.color = "coral" 
+    e.textContent =  e.style.color = "gray" 
     })
   });
-  input.forEach(function(e) {
-    e.addEventListener("mouseout", event =>{
-    e.textContent =  e.style.color = "black" 
-    })
-  });
+  // input.forEach(function(e) {
+  //   e.addEventListener("mouseout", event =>{
+  //   e.textContent =  e.style.color = "black" 
+  //   })
+  // });
 
 
 });

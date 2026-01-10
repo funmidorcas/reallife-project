@@ -53,7 +53,7 @@ color: darkseagreen;
     display: none;
 
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .links{
         display: flex;
         flex-direction: column;
@@ -105,7 +105,7 @@ color: darkseagreen;
 }
 .menu-bar{
     position: relative;
-    right: 140px;
+    right: 10px;
     bottom: 10px;
 }
 .img-nav{
@@ -195,7 +195,7 @@ padding-top: 10px;
         object-fit: cover;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         #change-background-left {
             right: 380px;
         }
